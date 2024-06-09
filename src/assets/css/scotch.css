@@ -1,0 +1,33 @@
+.scotch.desktop{
+    position:relative;
+    margin-right:0px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width:400px;
+    height:80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
+    color:#f9f9ee; 
+    font-family: "Roboto", sans-serif;
+    font-weight:600;
+    font-size: 2rem;
+    font-style: normal;
+
+}
+
+.scotch.desktop.long{
+     background-image: url('../images/scotch-long.png');
+ }
+ .scotch.desktop.short{
+    /*background-image: url('../images/scotch-short.svg');*/
+ }
+
+/* convedrtisseur path/polygon SVG 
+https://www.plantcss.com/css-clip-path-generator?q=%22GGRcNXZdHWEDNX59NWV6NWMNNXZ6GWJfNGZ7MqNtNGRfMWV4MVddRWV6OqENMX59MWF7RWRaGWZtNqtfMFd9OqJ9MGBtNaINNXZaLH58GWJfLWJ4MaFtMWFfMFddRWFcOqENMX59MWF7RWF6GWZtMqRfMFd9OqJ4Max7RWB5OqZ7MWENNXZ6MVd8RWtdOqF4LWMDLWQRNqVdEqtdOqF4LWMNNqV8RWx9GWRcNX55LGNtMqtfMGtdM9dbNGFtMqNfMFdbNGZfMGF9RWF5GWRcMHZ8Nr58GWRcNX58MGJtMWwNNqV8RWJcOqENNqVdOqV8RWN8OqENNqV8RWR4OqENNqVdOqF8MXZbMVdbNGFtNGtfMFdbNGZfMGZbRWVbOqpaMGENNqV8RWwNNqVdRWZfMWZcMaZaEqYz%22
+*/

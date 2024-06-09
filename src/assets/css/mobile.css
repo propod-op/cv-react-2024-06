@@ -1,0 +1,113 @@
+.color-primary{
+  color:#2A546C;
+}
+
+.bg-color-primary{
+  background-color:#2A546C;
+}
+
+
+div.App{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height:auto;
+  min-height: 100vh;
+  width:100%;
+  overflow-x: hidden;
+}
+
+div.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width:100vw;
+  height:auto;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+section{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+  border-top:2px solid #777;
+}
+
+section h2{
+  width:100%;
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  padding-left: 1.5rem;
+}
+
+/* ----------- PRESENTATION -------------- */
+section.presentation{
+    padding:1rem;
+}
+section.presentation div.photo{
+    width:100%;
+    height:30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../images/presentation-right.png');
+}
+
+section.presentation div.texte{
+    line-height:1.5;
+    font-size: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding:1rem;
+}
+
+section.presentation p.hi{
+    margin:0;
+    line-height:1.5;
+    font-size: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+section.presentation p.je-suis{
+    margin:0;
+    line-height:1.5;
+    font-size: 2.5rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+span.green-bold{
+    color:#2A546C;
+    font-weight: 800;
+}
+
+/* ----------- PARCOURS -------------- */
+
+section.parcours{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color:#2A546C;
+  height:auto;
+  padding-bottom: 2rem;
+  padding-left:1rem;
+}
+section.parcours h2{
+ color:white;
+}
+
+img.parcours{
+  width:calc(100% - 3rem);
+}
