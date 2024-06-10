@@ -1,5 +1,18 @@
 
 
+div.App{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  min-height: 100vh;
+  height:100%;
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .color-primary{
   color:#2A546C;
 }
@@ -17,16 +30,6 @@
   opacity: 1;
 }
 
-div.App{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  height:auto;
-  min-height: 100vh;
-  width:100%;
-  overflow-x: hidden;
-}
 
 div.main-container{
   display: flex;
@@ -200,6 +203,7 @@ section.parcours h2{
   font-size: 4rem;
   width:100%;
   color: #fff;
+  padding-left: 0rem;
 }
 
 section.parcours img{

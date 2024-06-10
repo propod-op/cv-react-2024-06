@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Scotch } from "./Scotch";
+import { Scotch } from "../Scotch";
 
-export const DesktopSectionPresentation = () => {
+export const SectionPresentation = () => {
 	const [isVisible, setIsVisible] = useState(false);
 	const [scrollPosition, setScrollPosition] = useState(0);
 

@@ -111,3 +111,84 @@ section.parcours h2{
 img.parcours{
   width:calc(100% - 3rem);
 }
+
+p.texte-white{
+  margin:1rem;
+
+  line-height:1.5;
+  font-size: 0.9rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #f4f4e3;
+}
+
+/* ----------- PORTEFOLIO -------------- */
+section.portefolio{
+height:auto;
+}
+
+section.portefolio p{
+  margin:1rem;
+  line-height:1.5;
+  font-size: 1.5rem;
+  font-weight:700;
+  font-family: "Roboto", sans-serif;
+  color: #2A546C;
+}
+section.portefolio ul li{
+  margin:1rem;
+  line-height:1.5;
+  font-size: 1rem;
+  font-weight:400;
+  font-family: "Josefin Sans", sans-serif;
+  color: #121516;
+  /*list-style-type: "✅";*/
+  list-style-type: "✒️";
+}
+
+section.portefolio img{
+  width:80%;
+}
+
+/* ----------- CONTACTEZ-MOI -------------- */
+section.contactez-moi{
+  background-image: url("../images/contactez-moi.jpg");
+  background-size: cover;
+  background-position:right top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /*filter:grayscale()*/
+}
+section.contactez-moi h2{
+  color:#f4f4e3;
+  padding-left: unset;
+  text-align: center;
+  font-size:2.9rem;
+}
+
+section.contactez-moi form{
+  border:1px solid #656565;
+  border-radius: 0.25rem;
+  background-color: rgb(255,255,255,0.85);
+  height:calc(100vh - 20rem);
+  width:calc(100% - 4rem);
+  padding:2rem 1rem;
+}
+
+section.contactez-moi form input,
+section.contactez-moi form textarea{
+  line-height:1.5;
+  font-size: 1rem;
+  font-weight:400;
+  font-family: "Josefin Sans", sans-serif;
+  color: #121516;
+
+  border:1px solid #807f7f;
+  border-radius: 0.2rem;
+  background-color: rgb(255,255,255,0.85);
+  height:auto;
+  width:calc(100% - 2rem);
+  padding:0.5rem 1rem;
+}
+section.contactez-moi form textarea{
+  height: 10rem;
+}
