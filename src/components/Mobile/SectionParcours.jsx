@@ -2,7 +2,7 @@ import parcours from "../../assets/images/parcours-courbes-white.svg";
 
 export const SectionParcours = () => {
 	return (
-		<section className="parcours">
+		<section id="PAR" className="parcours">
 			<h2>PARCOURS</h2>
 			<p className="texte-white">
 				J'ai commencé avec de spetits projets VB.Net, avec plein d'idées comme un gestionnaire de police pour la PAO, en effet avant c'était la galère la gestion des polices dans un service PAO, InstantFointForAll permettait d'installer et de désintaller les polices automatiquement en fonction d'un

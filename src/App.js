@@ -1,22 +1,30 @@
+import React, { useEffect, useState } from "react";
+
 import { DesktopPage } from "./components/DesktopPage";
 import { MobilePage } from "./components/MobilePage";
 import { isMobile } from "react-device-detect";
-import React, { useState, useEffect } from "react";
 
 function App() {
-	const handleScroll = (event) => {
-		console.log("User scrolled!");
+	const [scrollPosition, setScrollPosition] = useState(0);
+
+	const handleScroll = () => {
+		const position = document.body.scrollTop || document.documentElement.scrollTop;
+		setScrollPosition(position);
 	};
 
 	useEffect(() => {
-		console.log("isMobile", isMobile);
+		document.addEventListener("scroll", handleScroll, { passive: true });
+
+		return () => {
+			document.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
 
-	return (
-		<div className="App" onScroll={handleScroll}>
-			{isMobile ? <MobilePage /> : <DesktopPage />}
-		</div>
-	);
+	useEffect(() => {
+		console.log("scrollPosition", scrollPosition);
+	}, [scrollPosition]);
+
+	return <div className="App">{isMobile ? <MobilePage scrollPosition={scrollPosition} /> : <DesktopPage />}</div>;
 }
 
 export default App;

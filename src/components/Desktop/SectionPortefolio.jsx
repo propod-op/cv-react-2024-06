@@ -10,7 +10,7 @@ export const SectionPortefolio = () => {
 			<h2>
 				PORTEFOLIO{" "}
 				<div className="scotch-position-1">
-					<Scotch className="" text={"OnceAgain.fr"} angle={-3} size={"long"} style={{ marginLeft: "4rem" }} />
+					<Scotch className="" on="desktop" text={"OnceAgain.fr"} angle={-3} size={"long"} style={{ marginLeft: "4rem" }} />
 				</div>
 			</h2>
 			<div className="content">

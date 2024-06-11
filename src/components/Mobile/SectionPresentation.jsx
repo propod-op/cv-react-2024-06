@@ -1,6 +1,6 @@
 export const SectionPresentation = () => {
 	return (
-		<section className="presentation">
+		<section id="PRE" className="presentation">
 			<h2>PRESENTATION</h2>
 			<div className="photo"></div>
 			<div className="texte">

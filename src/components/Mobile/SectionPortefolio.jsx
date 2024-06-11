@@ -3,11 +3,11 @@ import portefolio from "../../assets/images/portefolio-onceagain.jpg";
 
 export const SectionPortefolio = () => {
 	return (
-		<section className="portefolio">
+		<section id="POR" className="portefolio">
 			<h2>
 				PORTEFOLIO
 				<div className="scotch-position-1">
-					<Scotch className="" text={"OnceAgain.fr"} angle={-3} size={"long"} style={{ marginLeft: "4rem" }} />
+					<Scotch on={"mobile"} text={"OnceAgain.fr"} angle={-3} size={"long"} style={{ marginLeft: "4rem" }} />
 				</div>
 			</h2>
 			<div className="content">
@@ -36,7 +36,7 @@ export const SectionPortefolio = () => {
 				</ul>
 			</div>
 			<div className="content">
-				<p>J'ai commencé a faire des sites (d'abord PHP, puis en Javascript...)</p>
+				<p>J'ai commencé a faire des sites statiques PHP puis des CMS</p>
 
 				<ul>
 					<li>

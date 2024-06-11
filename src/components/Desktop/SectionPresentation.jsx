@@ -28,7 +28,7 @@ export const SectionPresentation = () => {
 					</p>
 					<p></p>
 					<span className="alignRight">
-						<Scotch className="" text={"REACT Developper"} angle={-3} size={"long"} style={{ marginLeft: "4rem" }} />
+						<Scotch className="" on="desktop" text={"REACT Developper"} angle={-3} size={"long"} style={{ marginLeft: "4rem" }} />
 					</span>
 					<p className="texte">Issu de 15 ans d’expérience dans l’imprimerie, j’ai décidé de poursuivre mon parcours dans le domaine du numérique et plus précisément en développement FRONT REACT</p>
 					<p className="citation">

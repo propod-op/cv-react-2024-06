@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll; /* Pour activer le défilement vertical */
+  scroll-behavior: smooth;
 }
 
 code {
@@ -14,4 +16,5 @@ code {
 
 *{
   box-sizing: content-box;
+  scroll-behavior: smooth;
 }
