@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Scotch } from "../Scotch";
-import portefolio from "../../assets/images//contactez-moi.jpg";
 
 export const SectionContactezMoi = () => {
 	let canSendMail = false;

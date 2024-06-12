@@ -1,4 +1,4 @@
-.scotch.desktop{
+.scotch {
     position:relative;
     margin-right:0px;
 
@@ -7,41 +7,29 @@
     justify-content: center;
     align-items: center;
 
-    width:400px;
-    height:80px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
 
     color:#f9f9ee; 
     font-family: "Roboto", sans-serif;
     font-weight:600;
-    font-size: 2rem;
     font-style: normal;
+}
+
+.scotch.desktop {
+    width:400px;
+    height:80px;
+
+    font-size: 2rem;
     background-image: url('../images/scotch-long.png');
 }
 
-.scotch.mobile{
-    position:relative;
-    margin-right:0px;
-
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+.scotch.mobile {
     width:220px;
     height:35px;
 
-    color:#f9f9ee; 
-    font-family: "Roboto", sans-serif;
-    font-weight:600;
     font-size: 1rem;
-    font-style: normal;
-
     background-image: url('../images/scotch-short.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 
