@@ -7,12 +7,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "dotenv": "^16.4.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.9.0",
     "react-device-detect": "^2.2.3",
-    "react-lazyload": "^3.2.1",
+    "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
+    "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -38,6 +37,17 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "react-dotenv": {
+    "whitelist": [
+      "API_URL",
+      "REACT_APP_EMAILJS_TEMPLATE_ID",
+      "REACT_APP_EMAILJS_SERVICE_ID",
+      "REACT_APP_EMAILJS_USER_ID",
+      "REACT_APP_RECAPTCHA_SITE_KEY",
+      "REACT_APP_RECAPTCHA_SECRET_KEY",
+      "REACT_APP_TEST"
     ]
   }
 }

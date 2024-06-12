@@ -18,6 +18,10 @@ div.App{
   overflow-x: hidden;
 }
 
+body *{
+  position:relative;
+}
+
 div.main-container{
   position:relative;
 
@@ -45,23 +49,33 @@ section{
 section h2{
   width:100%;
   font-size: 2.5rem;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Overpass", sans-serif;
   font-weight: 900;
   font-style: normal;
   padding-left: 1.5rem;
 }
 
+
 /* ----------- PRESENTATION -------------- */
 section.presentation{
-    padding:1rem;
+  position:relative;
 }
+section.presentation h2{
+  position:absolute;
+  z-index:3;
+  text-align: center;
+  /*background-color: rgb(255,255,255,0.5);*/
+}
+
 section.presentation div.photo{
-    width:100%;
-    height:15rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-image: url('../images/presentation-right.png');
+  position:relative;
+  width:100%;
+  height:25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-image: url('../images/presentation-right.png');
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 section.presentation div.texte{
@@ -75,18 +89,18 @@ section.presentation div.texte{
 }
 
 section.presentation p.hi{
-    margin:0;
-    line-height:1.5;
-    font-size: 1.5rem;
-    font-family: "Josefin Sans", sans-serif;
+  margin:0;
+  line-height:1.5;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 
 section.presentation p.je-suis{
-    margin:0;
-    line-height:1.5;
-    font-size: 2.5rem;
-    font-family: "Josefin Sans", sans-serif;
+  margin:0;
+  line-height:1.5;
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 
@@ -126,20 +140,22 @@ p.texte-white{
 
 /* ----------- PORTEFOLIO -------------- */
 section.portefolio{
-height:auto;
+  height:auto;
 }
 
-section.portefolio p{
+section.portefolio h3{
   margin:1rem;
-  line-height:1.5;
+  line-height:1.25;
   font-size: 1.5rem;
   font-weight:700;
-  font-family: "Roboto", sans-serif;
+  font-family: "EB Garamond", serif;
   color: #2A546C;
 }
+
 section.portefolio ul li{
-  margin:1rem;
-  line-height:1.5;
+  margin:0.5rem 0.75rem;
+  width:calc(100% - 2rem);
+  line-height:1.25;
   font-size: 1rem;
   font-weight:400;
   font-family: "Josefin Sans", sans-serif;
@@ -149,7 +165,8 @@ section.portefolio ul li{
 }
 
 section.portefolio img{
-  width:80%;
+  width:calc(100% - 2rem);
+  margin-left:1rem;
 }
 
 /* ----------- CONTACTEZ-MOI -------------- */
@@ -162,10 +179,11 @@ section.contactez-moi{
   /*filter:grayscale()*/
 }
 section.contactez-moi h2{
-  color:#f4f4e3;
+  color:#5e5e19;
   padding-left: unset;
   text-align: center;
-  font-size:2.35rem;
+  font-size:2rem;
+  margin:0 auto 1rem auto;
 }
 
 section.contactez-moi form{
@@ -177,15 +195,16 @@ section.contactez-moi form{
   border:1px solid #656565;
   border-radius: 0.25rem;
   background-color: rgb(255,255,255,0.85);
-  height:calc(100vh - 20rem);
+  height:calc(100vh - 5rem);
   width:calc(100% - 4rem);
-  padding:2rem 1rem;
+  padding:1rem;
+  margin-top:1rem;
 }
 
 section.contactez-moi form input,
 section.contactez-moi form textarea{
   line-height:1.5;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight:400;
   font-family: "Josefin Sans", sans-serif;
   color: #121516;
@@ -194,17 +213,18 @@ section.contactez-moi form textarea{
   border-radius: 0.2rem;
   background-color: rgb(255,255,255,0.85);
   height:auto;
-  width:calc(100% - 2rem);
-  padding:0.5rem 1rem;
+  width:calc(100% - 1rem);
+  padding:0.25rem 0.5rem;
 }
 section.contactez-moi form textarea{
   height: 10rem;
+  margin-bottom:1rem;
 }
 
 section.contactez-moi form > div ,
 section.contactez-moi form > input,
 section.contactez-moi form > button[type="submit"]{
-  margin-bottom:1rem;
+  margin-bottom:0.5rem;
 }
 section.contactez-moi form > button[type="submit"]{
   height:1.5rem;

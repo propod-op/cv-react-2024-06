@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { DesktopPage } from "./components/DesktopPage";
 import { MobilePage } from "./components/MobilePage";
 import { isMobile } from "react-device-detect";
+// remove this after you've confir
 
 function App() {
 	const [scrollPosition, setScrollPosition] = useState(0);
@@ -21,7 +22,7 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		console.log("scrollPosition", scrollPosition);
+		/*console.log("scrollPosition", scrollPosition);*/
 	}, [scrollPosition]);
 
 	return <div className="App">{isMobile ? <MobilePage scrollPosition={scrollPosition} /> : <DesktopPage />}</div>;

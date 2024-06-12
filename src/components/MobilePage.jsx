@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { SectionParcours } from "./Mobile/SectionParcours";
 import { SectionPortefolio } from "./Mobile/SectionPortefolio";
 import { SectionPresentation } from "./Mobile/SectionPresentation";
