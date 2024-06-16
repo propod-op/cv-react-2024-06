@@ -23,6 +23,7 @@ export const SectionPortefolio = () => {
                         OnceAgain.fr ...»
                         <br />
                     </h3>
+                    <hr />
                     <h4> mes missions</h4>
 
                     <ul>
@@ -33,6 +34,7 @@ export const SectionPortefolio = () => {
                         <li>Mise à jour de la charte graphique</li>
                         <li>Ajout de fonctionnalités</li>
                     </ul>
+                    <hr />
                 </div>
             </div>
 
@@ -51,7 +53,8 @@ export const SectionPortefolio = () => {
                         « J'ai réalisé quelques applications VB.Net pour
                         l'entreprise de tampons pour laquelle je travaillais.»
                     </h3>
-                    <h4>Réalisations</h4>
+                    <hr />
+                    <h4>VB.net</h4>
                     <ul>
                         <li>
                             J'ai commencé par des macro VB dans CorelDraw,
@@ -66,22 +69,29 @@ export const SectionPortefolio = () => {
                             d'imprimer en PDF le tableau des expéditions de la
                             semaine).
                         </li>
-
+                    </ul>
+                    <hr />
+                    <h4>Etude de projet</h4>
+                    <ul>
                         <li>
-                            J'ai commencé une étude de faisabilité d'un produit
-                            encore inexistant : <br />
-                            <b>le tampon numérique.</b>
+                            lorsque je travaillais chez RCA, j'ai commencé une
+                            étude de faisabilité d'un produit encore inexistant
+                            : <b>le tampon numérique.</b>
                             <br />
                             <br />
-                            Etude sur la propriété intellectuelle (marque et
-                            conception), étude sur le fonctionnement,
-                            proposition d'un modèle compacte moderne recyclé
+                            <li>J'ai réalisé une étude sur la propriété intellectuelle (marque et
+                            conception)</li>
+                            <li>une étude sur le fonctionnement</li>
+                            <li>Une proposition d'un modèle compacte moderne recyclé
                             avec écran et d'un autre en bois piloté par
-                            application mobile. Recherche de partenaires pour la
-                            conception du prototype...
+                            application mobile.</li>
+                            <li>Une recherche de partenaires pour la
+                            conception du prototype...</li>
+                            
                         </li>
                         <img src={estamp} alt="projet tampon numérique" />
                     </ul>
+                    <hr />
                 </div>
                 <div className="content"></div>
             </div>

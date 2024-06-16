@@ -143,6 +143,19 @@ h4 {
     text-align: center;
     margin: 0.25rem 0;
 }
+hr{
+    width:80%;
+    border: none;
+    height: 6px; /* L'épaisseur du <hr> */
+    background: repeating-linear-gradient(
+        to right,
+        black 0,
+        black 8px,
+        transparent 10px,
+        transparent 15px
+    );
+    border-radius: 100%; /* Pour rendre les tirets ronds */
+}
 
 p {
     font-family: var(--font-josephine);
@@ -248,7 +261,7 @@ section.portefolio > div > div:not(.scotch) {
 section.portefolio ul li {
     margin: 0.5rem 1rem 0.5rem 0.5rem;
     width: calc(100% - 2rem);
-    line-height: 1.25;
+    line-height: 1.35;
     font-size: 1rem;
     font-weight: 400;
     font-family: var(--font-roboto);
