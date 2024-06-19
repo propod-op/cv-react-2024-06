@@ -1,0 +1,50 @@
+body {
+    --color-pm-1: #2a546c;
+    --color-pm-2: #e9e8de;
+    --color-pm-3: #e9b715;
+    --color-pm-4: #b93a31;
+    --color-pm-5: #292929;
+
+    --font-josephine: 'Josefin Sans', sans-serif; /*Police sans serif */
+    --font-overpass: 'Overpass', sans-serif; /* Police type ROBOTO */
+    --font-julius: 'Julius Sans One', sans-serif; /* Police type sans serif medievale */
+    --font-amatic: 'Amatic SC', sans-serif; /* Police sans serif Manuscrite */
+    --font-sofia: 'Sofia Sans Semi Condensed', sans-serif;
+    --font-beanie: 'Reenie Beanie', cursive; /* Police manuscrite tableau craie */
+    --font-roboto: 'Roboto', sans-serif; /* Police Sans serif */
+}
+
+.toast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 20vw;
+    height: 20vh;
+    background-color: white;
+
+    z-index: 100;
+}
+
+.toast.success {
+    border-top: 4px solid rgb(9, 219, 139);
+}
+
+.toast.alert {
+    border-top: 4px solid rgb(219, 68, 9);
+}
+
+.toast.info {
+    border-top: 4px solid rgb(9, 118, 219);
+}
+
+.toast h3 {
+    font: var(--font-roboto);
+    font-size: 2rem;
+}
+
+.toast p {
+    font-family: var(--font-josephine);
+    font-size: 1rem;
+}

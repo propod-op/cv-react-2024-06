@@ -12,12 +12,14 @@ export const useScrollPosition = () => {
     }, [])
 
     useEffect(() => {
-		console.log("scrollPosition", scrollPosition);
-	}, [scrollPosition]);
+        console.log('scrollPosition', scrollPosition)
+    }, [scrollPosition])
 
     const handleScroll = () => {
         const position =
             document.body.scrollTop || document.documentElement.scrollTop
         setScrollPosition(position)
     }
+
+    return { scrollPosition }
 }

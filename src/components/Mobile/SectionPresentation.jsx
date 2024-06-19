@@ -1,8 +1,25 @@
-import photo from '../../assets/images/presentation-right.png' 
+import { useEffect, useState } from 'react'
+import photo from '../../assets/images/presentation-right.png'
+import { useScrollPosition } from '../../hooks/useScrollPosition'
 
 export const SectionPresentation = () => {
+    const { scrollPosition } = useScrollPosition()
+    const [className, setClassName] = useState()
+
+    const condition = scrollPosition >= 0 && scrollPosition < 300
+
+    useEffect(() => {
+        if (condition) {
+            console.log('class show')
+            setClassName('show')
+        } else {
+            console.log('class hide')
+            setClassName('hide')
+        }
+    }, [condition])
+
     return (
-        <section id="PRE" className="presentation bg-dotted">
+        <section id="PRE" className={`presentation bg-dotted ${className}`}>
             <h2>PRESENTATION</h2>
             <div className="photo"></div>
             <div className="content">
@@ -20,7 +37,12 @@ export const SectionPresentation = () => {
                 <br /> mes compétences...
             </div>
             <a href="#PAR" className="">
-                <button className="pm-1">Suite ➜</button>
+                <button
+                    className="pm-1"
+                    style={{ marginBottom: '5rem', width: '4rem' }}
+                >
+                    Suite ➜
+                </button>
             </a>
         </section>
     )

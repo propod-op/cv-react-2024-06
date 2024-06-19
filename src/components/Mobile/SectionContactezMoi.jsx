@@ -4,7 +4,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import { Scotch } from '../Scotch'
 import { useEmailForm } from '../../hooks/useEmailForm'
 import { useEmailJS } from '../../hooks/useSendEmail'
-import SvgIcon from './SvgIcon.jsx';
+import SvgIcon from './SvgIcon.jsx'
 
 export const SectionContactezMoi = () => {
     let canSendMail = false
@@ -100,7 +100,10 @@ export const SectionContactezMoi = () => {
                     sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
                     onChange={onChange}
                 />
-                <button type="submit" className="pm-1"> Envoyer le mail<SvgIcon fillColor='#e9e8de'/></button>
+                <button type="submit" className="pm-1">
+                    Envoyer le mail
+                    <SvgIcon fillColor="#e9e8de" />
+                </button>
                 {status === 'sending' && <p>envoi en cours...</p>}
             </form>
         </section>

@@ -1,7 +1,9 @@
+import { useEffect } from 'react'
 import { Scotch } from '../Scotch'
 import portefolio from '../../assets/images/portefolio-onceagain.jpg'
 import estamp from '../../assets/images/projet-estamp.png'
 import xpsuite from '../../assets/images/projet-xpsuite.png'
+import { useScrollPosition } from '../../hooks/useScrollPosition'
 
 export const SectionPortefolio = () => {
     return (
@@ -79,15 +81,20 @@ export const SectionPortefolio = () => {
                             : <b>le tampon numérique.</b>
                             <br />
                             <br />
-                            <li>J'ai réalisé une étude sur la propriété intellectuelle (marque et
-                            conception)</li>
+                            <li>
+                                J'ai réalisé une étude sur la propriété
+                                intellectuelle (marque et conception)
+                            </li>
                             <li>une étude sur le fonctionnement</li>
-                            <li>Une proposition d'un modèle compacte moderne recyclé
-                            avec écran et d'un autre en bois piloté par
-                            application mobile.</li>
-                            <li>Une recherche de partenaires pour la
-                            conception du prototype...</li>
-                            
+                            <li>
+                                Une proposition d'un modèle compacte moderne
+                                recyclé avec écran et d'un autre en bois piloté
+                                par application mobile.
+                            </li>
+                            <li>
+                                Une recherche de partenaires pour la conception
+                                du prototype...
+                            </li>
                         </li>
                         <img src={estamp} alt="projet tampon numérique" />
                     </ul>
