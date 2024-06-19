@@ -1,43 +1,43 @@
 .menubar {
-    position: fixed;
-    z-index: 10;
-    bottom: 1.5rem;
+  position: fixed;
+  z-index: 10;
+  bottom: 1.5rem;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
-    width: 15rem;
-    height: 2.5rem;
-    background-color: #2a546c;
-    color: #f4f4e3;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: #2a546c;
+  color: #f4f4e3;
 
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .menubar a,
 .menubar span {
-    color: #f4f4e3;
+  color: #f4f4e3;
 }
 
 .menubar a {
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80%;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
 }
 .menubar a:nth-child(1) {
-    background-image: url('../images/icon-presentation.png');
+  background-image: url('../images/icon-presentation.png');
 }
 .menubar a:nth-child(2) {
-    background-image: url('../images/icon-parcours.png');
+  background-image: url('../images/icon-parcours.png');
 }
 .menubar a:nth-child(3) {
-    background-image: url('../images/icon-portefolio.png');
+  background-image: url('../images/icon-portefolio.png');
 }
 .menubar a:nth-child(4) {
-    background-image: url('../images/icon-contactez-moi.png');
+  background-image: url('../images/icon-contactez-moi.png');
 }
