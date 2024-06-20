@@ -1,5 +1,5 @@
-import '../assets/css/fonts.css';
-import '../assets/css/scotch.css';
+import '../../assets/css/fonts.css';
+import '../../../src/assets/css/scotch.css';
 
 export const Scotch = ({ on, text, angle, size }) => {
   return (

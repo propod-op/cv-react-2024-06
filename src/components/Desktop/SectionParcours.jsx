@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Scotch } from '../Scotch';
+import { Scotch } from '../commons/Scotch';
 import parcours from '../../assets/images/parcours-courbes-white.svg';
 
 export const SectionParcours = () => {

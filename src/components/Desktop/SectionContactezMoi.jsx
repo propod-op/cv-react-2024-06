@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Scotch } from '../Scotch';
+import { Scotch } from '../commons/Scotch';
 
 export const SectionContactezMoi = () => {
   const [emailData, setEmailData] = useState({

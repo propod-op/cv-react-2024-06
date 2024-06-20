@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Scotch } from '../Scotch';
+import { Scotch } from '../commons/Scotch';
 import portefolio from '../../assets/images/portefolio-onceagain.jpg';
 
 export const SectionPortefolio = () => {

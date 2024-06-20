@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Scotch } from '../Scotch';
+import { Scotch } from '../commons/Scotch';
 
 export const SectionPresentation = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { Scotch } from '../Scotch';
+import { Scotch } from '../commons/Scotch';
 import { useEmailForm } from '../../hooks/useEmailForm';
 import { useEmailJS } from '../../hooks/useSendEmail';
 import SvgIcon from './SvgIcon.jsx';
