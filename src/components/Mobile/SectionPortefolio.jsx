@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Scotch } from '../commons/Scotch';
 import portefolio from '../../assets/images/portefolio-onceagain.jpg';
 import estamp from '../../assets/images/projet-estamp.png';
@@ -7,10 +7,24 @@ import { useScrollPosition } from '../../hooks/useScrollPosition';
 import { Toast } from '../commons/Toast';
 
 export const SectionPortefolio = () => {
+  const [showToast, setShowToast] = useState(false);
+
+  const handleClickToast = () => {
+    setShowToast(true);
+  };
+
   return (
     <section id="POR" className="portefolio">
       <h2>PORTEFOLIO</h2>
-      <button>Toast it !</button>
+      <button onClick={handleClickToast}> Toast it !</button>
+      {showToast && (
+        <Toast
+          style="success"
+          modal={true}
+          title="Well done !"
+          buttonText="Vous avez reussi à afficher le toast !"
+        />
+      )}
       <div>
         <Scotch
           on={'mobile'}

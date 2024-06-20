@@ -23,7 +23,7 @@ export const SectionPresentation = () => {
     <section id="PRE" className={`presentation bg-dotted ${className}`}>
       <h2>PRESENTATION</h2>
       <Toast
-        type="success"
+        style="success"
         modal={true}
         buttonText="Merci, j'ai compris !"
         title="Bravo !"

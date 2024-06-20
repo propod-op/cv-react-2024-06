@@ -38,7 +38,7 @@ export const SectionContactezMoi = () => {
   };
 
   return (
-    <section id="CON" className="contactez-moi">
+    <section id="CON" className="contactez-moi bg-dotted">
       <form onSubmit={handleSubmit}>
         {status === 'success' && <p>Envoi OK x</p>}
         {status === 'failure' && <p>Envoi KO x</p>}

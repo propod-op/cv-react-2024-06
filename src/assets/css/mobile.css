@@ -285,10 +285,6 @@ section.portefolio img {
 
 /* ----------- CONTACTEZ-MOI -------------- */
 section.contactez-moi {
-  background-image: url('../images/fond-points.jpg');
-  background-size: cover;
-  background-position: right top;
-  background-repeat: no-repeat;
   height: 100vh;
 }
 section.contactez-moi h2 {
@@ -305,9 +301,9 @@ section.contactez-moi form {
   justify-content: flex-start;
   align-items: center;
 
-  border: 1px solid #656565;
-  border-radius: 0.25rem;
-  background-color: rgb(255, 255, 255, 0.85);
+  /* border: 1px solid #656565; */
+  /* border-radius: 0.25rem; */
+  /* background-color: rgb(255, 255, 255, 0.85); */
   height: calc(100vh - 15rem);
   width: calc(100% - 4rem);
   padding: 1rem;
@@ -322,7 +318,7 @@ section.contactez-moi form textarea {
   font-family: 'Josefin Sans', sans-serif;
   color: #121516;
 
-  border: 1px solid #807f7f;
+  border: 1px solid #bbb9b9;
   border-radius: 0.2rem;
   background-color: rgb(255, 255, 255, 0.85);
   height: auto;
