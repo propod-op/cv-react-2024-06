@@ -1,9 +1,9 @@
 body {
-  --color-pm-1: #2a546c;
-  --color-pm-2: #e9e8de;
-  --color-pm-3: #e9b715;
-  --color-pm-4: #b93a31;
-  --color-pm-5: #292929;
+  --color-success: rgb(18, 156, 103);
+  --color-alert: rgb(219, 68, 9);
+  --color-warning: rgb(216, 144, 9);
+  --color-info: rgb(9, 118, 219);
+  --color-white-cream: rgb(224, 220, 214);
 
   --font-josephine: 'Josefin Sans', sans-serif; /*Police sans serif */
   --font-overpass: 'Overpass', sans-serif; /* Police type ROBOTO */
@@ -15,36 +15,97 @@ body {
 }
 
 .toast {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 20vw;
-  height: 20vh;
-  background-color: white;
+  height: 10rem;
+  width: 20rem;
+  left: calc(50% - 10rem);
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  background-color: var(--color-white-cream);
+  background-image: url('../images/fond-points.jpg');
+  background-size: 10%;
+  transition:
+    top 1s ease-in-out,
+    opacity 1s ease-in-out,
+    transform 1s ease-in-out;
 
   z-index: 100;
 }
 
+.toast.hide {
+  opacity: 0;
+  top: -15rem;
+}
+
+.toast.show {
+  transform: translateY(4rem);
+  opacity: 1;
+}
+
 .toast.success {
-  border-top: 4px solid rgb(9, 219, 139);
+  border-top: 8px solid var(--color-success);
 }
 
 .toast.alert {
-  border-top: 4px solid rgb(219, 68, 9);
+  border-top: 8px solid var(--color-alert);
+}
+
+.toast.warning {
+  border-top: 8px solid var(--color-warning);
 }
 
 .toast.info {
-  border-top: 4px solid rgb(9, 118, 219);
+  border-top: 8px solid var(--color-info);
 }
 
-.toast h3 {
+.toast .title {
   font: var(--font-roboto);
   font-size: 2rem;
 }
 
 .toast p {
   font-family: var(--font-josephine);
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
+
+.toast button {
+  padding: 0.5rem 1rem;
+  width: auto;
+  height: auto;
+
+  font-weight: 800;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.toast.success button {
+  background-color: var(--color-success);
+  color: var(--color-white-cream);
+}
+
+.toast.alert button {
+  background-color: var(--color-alert);
+  color: var(--color-white-cream);
+}
+
+.toast.toast.warning button {
+  background-color: var(--color-warning);
+  color: var(--color-white-cream);
+}
+
+.toast.info button {
+  background-color: var(--color-info0);
+  color: var(--color-white-cream);
+}
+/* Voir + tard avec le Desktop */
+/* .toast button:hover {
+  border-color: rgb(18, 156, 103);
+  background-color: rgb(241, 235, 235);
+  color: #292929;
+} */

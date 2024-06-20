@@ -22,13 +22,6 @@ body {
   background-color: var(--color-pm-1);
 }
 
-.bg-dotted {
-  background-color: var(--color-pm2);
-  background-repeat: repeat;
-  background-size: 64px;
-  background-image: url('../images/fond-points-gris-clair.png');
-}
-
 div.App {
   display: flex;
   flex-direction: row;
@@ -162,17 +155,24 @@ p {
   color: var(--color-pm-5);
 }
 
+.bg-dotted {
+  background-color: var(--color-pm2);
+  background-repeat: repeat;
+  background-size: 48px;
+  background-image: url('../images/fond-points.jpg');
+}
+
 /* ----------- PRESENTATION -------------- */
 section.presentation {
   position: relative;
 }
 
 section.presentation.show {
-  background-color: red;
+  /* background-color: red; */
 }
 
 section.presentation.hide {
-  background-color: green;
+  /* background-color: green; */
 }
 
 section.presentation h2 {
@@ -253,7 +253,7 @@ section.portefolio {
   height: auto;
   background-repeat: repeat;
   background-size: 64px;
-  background-image: url('../images/fond-points-gris-clair.jpg');
+  background-image: url('../images/fond-points.jpg');
 }
 section.portefolio h2 {
   margin: 0.5rem 0;
@@ -285,7 +285,7 @@ section.portefolio img {
 
 /* ----------- CONTACTEZ-MOI -------------- */
 section.contactez-moi {
-  background-image: url('../images/contactez-moi.jpg');
+  background-image: url('../images/fond-points.jpg');
   background-size: cover;
   background-position: right top;
   background-repeat: no-repeat;

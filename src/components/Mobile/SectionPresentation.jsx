@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import photo from '../../assets/images/presentation-right.png';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
+import { Toast } from '../commons/Toast';
 
 export const SectionPresentation = () => {
   const { scrollPosition } = useScrollPosition();
@@ -21,7 +22,15 @@ export const SectionPresentation = () => {
   return (
     <section id="PRE" className={`presentation bg-dotted ${className}`}>
       <h2>PRESENTATION</h2>
-      <div className="photo"></div>
+      <Toast
+        type="success"
+        modal={true}
+        buttonText="Merci, j'ai compris !"
+        title="Bravo !"
+        message="Ayé vous êtes connecté a notre réseau !"
+        duration={3000}
+      />
+      {<div className="photo"></div>}
       <div className="content">
         <p className="hi">Hi everybody !</p>
         <p className="je-suis pm-1">
