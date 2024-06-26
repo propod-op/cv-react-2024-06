@@ -71,6 +71,7 @@ body {
   font: var(--font-roboto);
   font-size: 1.5rem;
   font-weight: 600;
+  padding: 0 !important;
 }
 
 .toast p {
@@ -81,6 +82,8 @@ body {
 }
 
 .toast button {
+  position: relative;
+  bottom: -1.25rem;
   padding: 0.5rem 1rem;
   width: auto;
   height: auto;

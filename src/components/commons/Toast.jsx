@@ -1,57 +1,41 @@
 import '../../assets/css/toast.css';
 import React, { useEffect, useState } from 'react';
 
-// Toast styles : success (vert), alert (rouge) , info (bleu)
+// Toast styles : success (vert), danger (rouge), warning (orange) info (bleu)
 // Toast modal : true (button) false (autoclose)
+
 export const Toast = ({
-  type,
+  visible,
+  style,
   title,
   message,
-  modal,
+  autoClose,
   buttonText,
   duration,
+  onClose,
 }) => {
-  // Par defaut le composant a la classe 'hide' et est 'visible'
-  const [className, setClassName] = useState('hide');
-  const [visible, setVisible] = useState(true);
-  const hideEffectDuration = 1000;
-
-  const handleClose = () => {
-    setVisible(false);
-  };
+  const className = visible ? 'show' : 'hide';
 
   useEffect(() => {
-    if (modal === false) {
-      setClassName('show');
-
-      const hideClassTimeout = setTimeout(() => {
-        setClassName('hide');
-      }, duration);
-
-      const removeTimeout = setTimeout(() => {
-        setVisible(false);
-      }, duration + 500); // 500ms is the transition duration in CSS
-
-      return () => {
-        clearTimeout(hideClassTimeout);
-        clearTimeout(removeTimeout);
-      };
+    if (autoClose === false) {
+      return;
     }
-    if (modal === true) {
-      setClassName('show');
-    }
-  }, [duration, modal]);
 
-  if (!visible) {
-    return null;
-  }
+    const timeout = setTimeout(() => {
+      onClose();
+    }, duration || 1000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [visible, autoClose]);
 
   return (
-    <div className={`toast ${className} ${type}`}>
+    <div className={`toast ${className} ${style}`}>
       <div className="title">{title}</div>
       <p className="message">{message}</p>
-      {modal === true && (
-        <button className="success" onClick={handleClose}>
+      {!autoClose && (
+        <button className="success" onClick={onClose}>
           {buttonText}
         </button>
       )}

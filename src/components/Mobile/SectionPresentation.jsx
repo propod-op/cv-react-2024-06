@@ -5,31 +5,23 @@ import { Toast } from '../commons/Toast';
 
 export const SectionPresentation = () => {
   const { scrollPosition } = useScrollPosition();
-  const [className, setClassName] = useState();
+  const [exposedClass, setExposedClass] = useState('');
 
   const condition = scrollPosition >= 0 && scrollPosition < 300;
 
   useEffect(() => {
     if (condition) {
-      console.log('class show');
-      setClassName('show');
+      console.log('class exposed');
+      setExposedClass('exposed');
     } else {
-      console.log('class hide');
-      setClassName('hide');
+      console.log('class notExposed');
+      setExposedClass('notExponsed');
     }
   }, [condition]);
 
   return (
-    <section id="PRE" className={`presentation bg-dotted ${className}`}>
+    <section id="PRE" className={`presentation bg-dotted ${exposedClass}`}>
       <h2>PRESENTATION</h2>
-      <Toast
-        style="success"
-        modal={true}
-        buttonText="Merci, j'ai compris !"
-        title="Bravo !"
-        message="Ayé vous êtes connecté a notre réseau !"
-        duration={3000}
-      />
       {<div className="photo"></div>}
       <div className="content">
         <p className="hi">Hi everybody !</p>

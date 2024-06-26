@@ -9,22 +9,23 @@ import { Toast } from '../commons/Toast';
 export const SectionPortefolio = () => {
   const [showToast, setShowToast] = useState(false);
 
-  const handleClickToast = () => {
-    setShowToast(true);
-  };
+  const onClose = () => setShowToast(false);
 
   return (
     <section id="POR" className="portefolio">
       <h2>PORTEFOLIO</h2>
-      <button onClick={handleClickToast}> Toast it !</button>
-      {showToast && (
-        <Toast
-          style="success"
-          modal={true}
-          title="Well done !"
-          buttonText="Vous avez reussi à afficher le toast !"
-        />
-      )}
+      <button onClick={() => setShowToast(true)}>Toast it !</button>
+      <Toast
+        visible={showToast}
+        style="success"
+        autoClose={false}
+        title="Well done !"
+        message="Vous avez reussi à afficher le toast !"
+        buttonText="OK, merci"
+        duration={1000}
+        onClose={onClose}
+        // ou onClose = {() => setShowToast(false)}
+      />
       <div>
         <Scotch
           on={'mobile'}

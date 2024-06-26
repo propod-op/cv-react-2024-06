@@ -12,7 +12,7 @@ export const useScrollPosition = () => {
   }, []);
 
   useEffect(() => {
-    console.log('scrollPosition', scrollPosition);
+    //console.log('scrollPosition', scrollPosition);
   }, [scrollPosition]);
 
   const handleScroll = () => {
