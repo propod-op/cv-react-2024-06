@@ -167,14 +167,6 @@ section.presentation {
   position: relative;
 }
 
-section.presentation.show {
-  /* background-color: red; */
-}
-
-section.presentation.hide {
-  /* background-color: green; */
-}
-
 section.presentation h2 {
   position: absolute;
   z-index: 3;

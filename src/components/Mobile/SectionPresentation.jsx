@@ -1,23 +1,11 @@
 import { useEffect, useState } from 'react';
-import photo from '../../assets/images/presentation-right.png';
-import { useScrollPosition } from '../../hooks/useScrollPosition';
 import { Toast } from '../commons/Toast';
+import photo from '../../assets/images/presentation-right.png';
+import '../../assets/css/scrollEffect.css';
+import { useScrollEffect } from '../../hooks/useScrollEffect';
 
 export const SectionPresentation = () => {
-  const { scrollPosition } = useScrollPosition();
-  const [exposedClass, setExposedClass] = useState('');
-
-  const condition = scrollPosition >= 0 && scrollPosition < 300;
-
-  useEffect(() => {
-    if (condition) {
-      console.log('class exposed');
-      setExposedClass('exposed');
-    } else {
-      console.log('class notExposed');
-      setExposedClass('notExponsed');
-    }
-  }, [condition]);
+  const { exposedClass } = useScrollEffect(0, 700);
 
   return (
     <section id="PRE" className={`presentation bg-dotted ${exposedClass}`}>

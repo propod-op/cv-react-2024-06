@@ -1,8 +1,11 @@
 import parcours from '../../assets/images/parcours-courbes-white.svg';
+import '../../assets/css/scrollEffect.css';
+import { useScrollEffect } from '../../hooks/useScrollEffect';
 
 export const SectionParcours = () => {
+  const { exposedClass } = useScrollEffect(700, 1700);
   return (
-    <section id="PAR" className="parcours">
+    <section id="PAR" className={`parcours ${exposedClass}`}>
       <h2>PARCOURS</h2>
       <img className="parcours" src={parcours} alt="parcours olivier" />
       <p>

@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react';
 import { Scotch } from '../commons/Scotch';
+import { Toast } from '../commons/Toast';
 import portefolio from '../../assets/images/portefolio-onceagain.jpg';
 import estamp from '../../assets/images/projet-estamp.png';
 import xpsuite from '../../assets/images/projet-xpsuite.png';
-import { useScrollPosition } from '../../hooks/useScrollPosition';
-import { Toast } from '../commons/Toast';
+import { useScrollEffect } from '../../hooks/useScrollEffect';
 
 export const SectionPortefolio = () => {
   const [showToast, setShowToast] = useState(false);
 
+  const { exposedClass } = useScrollEffect(1500, 2300);
   const onClose = () => setShowToast(false);
 
   return (
-    <section id="POR" className="portefolio">
+    <section id="POR" className={`portefolio ${exposedClass}`}>
       <h2>PORTEFOLIO</h2>
       <button onClick={() => setShowToast(true)}>Toast it !</button>
       <Toast
@@ -93,22 +94,22 @@ export const SectionPortefolio = () => {
               <b>le tampon numérique.</b>
               <br />
               <br />
-              <li>
-                J'ai réalisé une étude sur la propriété intellectuelle (marque
-                et conception)
-              </li>
-              <li>une étude sur le fonctionnement</li>
-              <li>
-                Une proposition d'un modèle compacte moderne recyclé avec écran
-                et d'un autre en bois piloté par application mobile.
-              </li>
-              <li>
-                Une recherche de partenaires pour la conception du prototype...
-              </li>
             </li>
+            <li>
+              J'ai réalisé une étude sur la propriété intellectuelle (marque et
+              conception)
+            </li>
+            <li>une étude sur le fonctionnement</li>
+            <li>
+              Une proposition d'un modèle compacte moderne recyclé avec écran et
+              d'un autre en bois piloté par application mobile.
+            </li>
+            <li>
+              Une recherche de partenaires pour la conception du prototype...
+            </li>
+
             <img src={estamp} alt="projet tampon numérique" />
           </ul>
-          <hr />
         </div>
         <div className="content"></div>
       </div>
