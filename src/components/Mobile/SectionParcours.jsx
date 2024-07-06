@@ -2,13 +2,13 @@ import { useRef } from 'react';
 import parcours from '../../assets/images/parcours-courbes-white.svg';
 import '../../assets/css/scrollEffect.css';
 import { useScrollEffect } from '../../hooks/useScrollEffect';
-import { useRefHeight } from '../../hooks/useRefHeight';
+import { useRefOffset } from '../../hooks/useRefOffset';
 
 export const SectionParcours = () => {
   const sectionRef = useRef(null); // Correctly define the sectionRef here
-  const [sectionHeight, sectionTop, tolerance] = useRefHeight(sectionRef); // je lui envoi l'élément HTML
+  const [sectionHeight, sectionTop, tolerance] = useRefOffset(sectionRef); // je lui envoi l'élément HTML
   const { exposedClass } = useScrollEffect(
-    sectionTop - tolerance,
+    sectionTop - tolerance * 2,
     sectionTop + sectionHeight - tolerance,
   );
 

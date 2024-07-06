@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useScrollPosition } from './useScrollPosition';
 
+// Ce Hook renvoi une classe 'exposed' ou 'notExposed' en fonction de la scrollPosition
 export const useScrollEffect = (positionStart, positionEnd) => {
   const { scrollPosition } = useScrollPosition();
   const [exposedClass, setExposedClass] = useState('');

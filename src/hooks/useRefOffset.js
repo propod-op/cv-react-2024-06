@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const useRefHeight = (sectionRef) => {
+export const useRefOffset = (sectionRef) => {
   const [sectionHeight, setSectionHeight] = useState(0);
   const [sectionOffsetPosition, setSectionOffsetPosition] = useState(0);
   const tolerance = 300;

@@ -3,15 +3,15 @@ import { Toast } from '../commons/Toast';
 import photo from '../../assets/images/presentation-right.png';
 import '../../assets/css/scrollEffect.css';
 import { useScrollEffect } from '../../hooks/useScrollEffect';
-import { useRefHeight } from '../../hooks/useRefHeight';
+import { useRefOffset } from '../../hooks/useRefOffset';
 
 export const SectionPresentation = () => {
-  const sectionRef = useRef(null); // Correctly define the sectionRef here
-  const [sectionHeight, sectionTop, tolerance] = useRefHeight(sectionRef); // je lui envoi l'élément HTML
+  const sectionRef = useRef(null); //  Définition de l'élément HTML <Section> dans un ref={sectionRef} en argument
+  const [sectionHeight, sectionTop, tolerance] = useRefOffset(sectionRef); // Obtenir le Y1 et Y2 de l'élément HTML <Section>
   const { exposedClass } = useScrollEffect(
     sectionTop,
     sectionHeight - tolerance,
-  );
+  ); // Définir la classe de l'élément HTML <Section> 'exposed' ou 'notExposed'
 
   return (
     <section
