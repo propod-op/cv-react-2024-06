@@ -1,14 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Toast } from '../commons/Toast';
 import photo from '../../assets/images/presentation-right.png';
 import '../../assets/css/scrollEffect.css';
 import { useScrollEffect } from '../../hooks/useScrollEffect';
+import { useRefHeight } from '../../hooks/useRefHeight';
 
 export const SectionPresentation = () => {
-  const { exposedClass } = useScrollEffect(0, 700);
+  const sectionRef = useRef(null); // Correctly define the sectionRef here
+  const [sectionHeight, sectionTop, tolerance] = useRefHeight(sectionRef); // je lui envoi l'élément HTML
+  const { exposedClass } = useScrollEffect(
+    sectionTop,
+    sectionHeight - tolerance,
+  );
 
   return (
-    <section id="PRE" className={`presentation bg-dotted ${exposedClass}`}>
+    <section
+      id="PRE"
+      className={`presentation bg-dotted ${exposedClass}`}
+      ref={sectionRef}
+    >
       <h2>PRESENTATION</h2>
       {<div className="photo"></div>}
       <div className="content">

@@ -10,10 +10,10 @@ export const useScrollEffect = (positionStart, positionEnd) => {
 
   useEffect(() => {
     if (condition) {
-      console.log('class exposed');
+      //console.log('class exposed');
       setExposedClass('exposed');
     } else {
-      console.log('class notExposed');
+      //console.log('class notExposed');
       setExposedClass('notExposed');
     }
   }, [condition]);

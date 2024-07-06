@@ -1,19 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Scotch } from '../commons/Scotch';
 import { Toast } from '../commons/Toast';
 import portefolio from '../../assets/images/portefolio-onceagain.jpg';
 import estamp from '../../assets/images/projet-estamp.png';
 import xpsuite from '../../assets/images/projet-xpsuite.png';
 import { useScrollEffect } from '../../hooks/useScrollEffect';
+import { useRefHeight } from '../../hooks/useRefHeight';
 
 export const SectionPortefolio = () => {
   const [showToast, setShowToast] = useState(false);
 
-  const { exposedClass } = useScrollEffect(1500, 2300);
+  const sectionRef = useRef(null); // Correctly define the sectionRef here
+  const [sectionHeight, sectionTop, tolerance] = useRefHeight(sectionRef); // je lui envoi l'élément HTML
+  const { exposedClass } = useScrollEffect(
+    sectionTop - 300,
+    sectionTop + sectionHeight - tolerance,
+  );
+
   const onClose = () => setShowToast(false);
 
   return (
-    <section id="POR" className={`portefolio ${exposedClass}`}>
+    <section id="POR" className={`portefolio ${exposedClass}`} ref={sectionRef}>
       <h2>PORTEFOLIO</h2>
       <button onClick={() => setShowToast(true)}>Toast it !</button>
       <Toast

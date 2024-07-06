@@ -1,11 +1,19 @@
+import { useRef } from 'react';
 import parcours from '../../assets/images/parcours-courbes-white.svg';
 import '../../assets/css/scrollEffect.css';
 import { useScrollEffect } from '../../hooks/useScrollEffect';
+import { useRefHeight } from '../../hooks/useRefHeight';
 
 export const SectionParcours = () => {
-  const { exposedClass } = useScrollEffect(700, 1700);
+  const sectionRef = useRef(null); // Correctly define the sectionRef here
+  const [sectionHeight, sectionTop, tolerance] = useRefHeight(sectionRef); // je lui envoi l'élément HTML
+  const { exposedClass } = useScrollEffect(
+    sectionTop - tolerance,
+    sectionTop + sectionHeight - tolerance,
+  );
+
   return (
-    <section id="PAR" className={`parcours ${exposedClass}`}>
+    <section id="PAR" className={`parcours ${exposedClass}`} ref={sectionRef}>
       <h2>PARCOURS</h2>
       <img className="parcours" src={parcours} alt="parcours olivier" />
       <p>
