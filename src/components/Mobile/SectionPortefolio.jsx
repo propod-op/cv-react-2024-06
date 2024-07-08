@@ -4,18 +4,14 @@ import { Toast } from '../commons/Toast';
 import portefolio from '../../assets/images/portefolio-onceagain.jpg';
 import estamp from '../../assets/images/projet-estamp.png';
 import xpsuite from '../../assets/images/projet-xpsuite.png';
-import { useScrollEffect } from '../../hooks/useScrollEffect';
-import { useRefOffset } from '../../hooks/useRefOffset';
+import { useHtmlElementIsDisplayed } from '../../hooks/useHtmlElementIsDisplayed';
 
 export const SectionPortefolio = () => {
   const [showToast, setShowToast] = useState(false);
 
   const sectionRef = useRef(null); // Correctly define the sectionRef here
-  const [sectionHeight, sectionTop, tolerance] = useRefOffset(sectionRef); // je lui envoi l'élément HTML
-  const { exposedClass } = useScrollEffect(
-    sectionTop - 300,
-    sectionTop + sectionHeight - tolerance,
-  );
+  const { isDisplayed } = useHtmlElementIsDisplayed(sectionRef, 300);
+  const exposedClass = isDisplayed ? 'exposed' : 'notExposed';
 
   const onClose = () => setShowToast(false);
 

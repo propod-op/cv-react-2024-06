@@ -1,16 +1,12 @@
 import { useRef } from 'react';
 import parcours from '../../assets/images/parcours-courbes-white.svg';
 import '../../assets/css/scrollEffect.css';
-import { useScrollEffect } from '../../hooks/useScrollEffect';
-import { useRefOffset } from '../../hooks/useRefOffset';
+import { useHtmlElementIsDisplayed } from '../../hooks/useHtmlElementIsDisplayed';
 
 export const SectionParcours = () => {
   const sectionRef = useRef(null); // Correctly define the sectionRef here
-  const [sectionHeight, sectionTop, tolerance] = useRefOffset(sectionRef); // je lui envoi l'élément HTML
-  const { exposedClass } = useScrollEffect(
-    sectionTop - tolerance * 2,
-    sectionTop + sectionHeight - tolerance,
-  );
+  const { isDisplayed } = useHtmlElementIsDisplayed(sectionRef, 0);
+  const exposedClass = isDisplayed ? 'exposed' : 'notExposed';
 
   return (
     <section id="PAR" className={`parcours ${exposedClass}`} ref={sectionRef}>

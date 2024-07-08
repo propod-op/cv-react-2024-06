@@ -1,17 +1,22 @@
-import { useEffect, useState, useRef } from 'react';
-import { Toast } from '../commons/Toast';
-import photo from '../../assets/images/presentation-right.png';
+import { useRef } from 'react';
 import '../../assets/css/scrollEffect.css';
-import { useScrollEffect } from '../../hooks/useScrollEffect';
-import { useRefOffset } from '../../hooks/useRefOffset';
+import { useHtmlElementIsDisplayed } from '../../hooks/useHtmlElementIsDisplayed';
 
 export const SectionPresentation = () => {
   const sectionRef = useRef(null); //  Définition de l'élément HTML <Section> dans un ref={sectionRef} en argument
-  const [sectionHeight, sectionTop, tolerance] = useRefOffset(sectionRef); // Obtenir le Y1 et Y2 de l'élément HTML <Section>
-  const { exposedClass } = useScrollEffect(
-    sectionTop,
-    sectionHeight - tolerance,
-  ); // Définir la classe de l'élément HTML <Section> 'exposed' ou 'notExposed'
+
+  // Cas cde figure n°1 (plus spécifique mais plus facile à comprendre)
+  const { isDisplayed } = useHtmlElementIsDisplayed(sectionRef, 300, true);
+  const exposedClass = isDisplayed ? 'exposed' : 'notExposed';
+
+  // Cas cde figure n°2 (plus ouvert mais plus compliqué à comprendre)
+  // const { scrollConditionIsVerified } = useScrollCondition((scrollPosition) => {
+  //   return (
+  //     scrollPosition >= sectionRef.current.offsetTop &&
+  //     scrollPosition < sectionRef.current.offsetHeight - 300
+  //   );
+  // }, true);
+  // const exposedClass = scrollConditionIsVerified ? 'exposed' : 'notExposed';
 
   return (
     <section
