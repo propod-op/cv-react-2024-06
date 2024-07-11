@@ -3,43 +3,43 @@ export const bubblesContent = [
     langage: 'vb',
     title: 'Mes débuts dans la programmation',
     content:
-      "En BTS imprimerie, j'ai créé ma 1ere boite de dialogue sur un Mac et je me dis : 'je pourrai essayer des faire des scripts pour l'imprimerie. J'ai donc travaillé chez moi mais avec un PC et il fallait donc un logiciel pour cela : Visual Studio. J'ai appris à utiliser tout les composants qu'il proposait. Puis les usercontrols se sont avérés simples d'utilisation et permettaient de faire les composant de nos rêves. J'ai découvert ma 1ere librarie : DirectX. J'ai réalisé à l'aide Visual Studio un CD interactif pour un ami : une interface graphique en 1024*920px. Il y avais aussi Adobe Flash a l'époque qui était utilise pour ce type de projets. Puis j'ai appris à créer un installateur. ",
+      "<div>🖨️ En BTS imprimerie, j'ai créé ma première boîte de dialogue sur un Mac et je me suis dit&nbsp; 😳: <i>'Je pourrais essayer de faire des scripts pour l'imprimerie...' </i>😳<br/> 🖳 J'ai donc travaillé chez moi, mais avec un PC, et il fallait donc un logiciel pour cela : Visual Studio.</div><div> J'ai appris à utiliser tous les composants qu'il proposait. Puis les <i><u>usercontrols</u></i> se sont avérés simples d'utilisation et permettaient de créer les composants de nos rêves. <div>J'ai découvert ma première librairie : DirectX. J'ai réalisé à l'aide de Visual Studio un CD interactif pour un ami : une interface graphique en 1024*920 px. Il y avait aussi Adobe Flash à l'époque, qui était utilisé pour ce type de projet.<div> Puis, j'ai appris à créer un installateur etc...</div>",
   },
   {
     langage: 'java',
     title: 'De VB.net à JAVA',
     content:
-      "VB.net c'est super mais ca tourne pas sur tout les OS. C'est quand plus pratique. J'ai fait connaissance avec l'IDE Eclipse. Il fallu apprendre à installer le JDK pour coder et le JRE ou l'execution. Puis comme dans VB.Net intégrés des librairie comme le Text-to-Speech par exemple. En terme d'interface, c'est graphiquement limité (Swing et SWT). Il a donc FMXL avec sont éditeur d'interface : SceneBuilder, l'ensemble permet de réaliser des interfaces très élégantes. Jen 'ai pour l'instant réalisé qu'un projet JAVA : Un Raspberry Pi récupère les données d'une sonde (device 18DS20) puis envoi la tempréature toutes les heures dans une base MariaDB. Puis les résultats sont consultables sur le reseau local grâce à un chart rendu en php. A l'époque je ne savais pas que j'ai pu le réaliser en Front comme avec React par exemple.",
+      "<div>VB.net, c'est super, mais ça ne tourne pas sur tous les OS. J'ai creusé le sujet et ai découvert ♨️JAVA♨️ et l'IDE 🪐Eclipse🪐.</div><div> Il a fallu apprendre à installer le JDK pour coder et le JRE pour l'exécution.<br/> Puis, comme dans VB.Net, intégrer des librairies comme le Text-to-Speech par exemple...</div><div> En termes d'interface, JAVA graphiquement limité (Swing et SWT) a moins de payer. Pour remédier à cela il y a FMXL avec son éditeur d'interface : SceneBuilder. L'ensemble permet de réaliser des interfaces très élégantes. </div><div>Je n'ai pour l'instant réalisé qu'un projet JAVA finalisé : un .jar sur un Raspberry Pi récupère les données d'une sonde (device 18DS20) puis envoie la température toutes les heures dans une base MariaDB. Ensuite, les résultats sont consultables sur le réseau local grâce à un graphique rendu en PHP. À l'époque, je ne savais pas que j'aurais pu le réaliser en Front, comme avec React par exemple.</div>",
   },
   {
     langage: 'html',
     title: "J'ai découvert le WEB avec HTML",
     content:
-      "HTML un langage plein de promesse, j'ai beaucoup pratiqué HTML. Il m'a donc fallut apprendre CSS3. J'ai acquierit une forte connaissance des 2 langages de base du web statique.",
+      "<div>🌐HTML : au cœur du WEB&nbsp;🌐</div><div class='view html'></div><div>J'ai beaucoup pratiqué HTML et il m'a donc fallu apprendre CSS3 et je connais la plupart des balises en HTML et de l'utilisation de CSS3. </div><div>Dans le WEB presque tout est HTML : Php génère du HTML et Javascript génère du HTML. </div><div>Une fois assimilés, les portes s'ouvrent à de nombreux langages : JQuery (pour manipuler le DOM et faire des effets époustouflant), puis vient PHP (pour communiquer avec une base de données et structurer ses projets en blocs). Plus recemment il y a JavaScript avec ES6 (générer du code asynchrone plus performant que PHP).</div>",
   },
   {
-    langage: 'cms',
-    title: 'Les CMS : les couteaux suisses.',
+    langage: 'jquery',
+    title: "L'outil idéal pour animer ses sites",
     content:
-      "En découvrant Wordpress, j'ai décourvert les CMS. Le travaille from scratch est déjà prêt. De plus de nombreux CMS sont disponibles gratuitement. Cela m'a été utile pour créer des sites pour des proches et qu'ils puissent gérer leurs contenus eux-même. Ensuite Il y a Prestashop. J'ai réalisé un site de vente en ligne de carpes de collection, du matériel necessaire et de la nourriture. Des modules souvent ibres ont été utilisés comme RockPOS pour la caisse matérielle, un module de livraison colissimo, et d'autres encore. Des blocs de code developpés par Webaxx (libres) on été intégrés. Quand ont connait Wordpress, les autres CMS sont presque dans le même esprit et l'apprentissage est plus rapide. Wordpress utile Symfony pour le Back et des thèmes pour le front.",
+      "<div>Hé oui, étrange ! j'ai commencé a apprendre JQuery avant Javascript... mais l'un n'empeche pas l'autre.</div><div class='view jquery'></div><div>Avec JQuery on peut manipuler son DOM a l'infini. Actuellement in est encore le plus performant en terme d'effets. On peut même faire des carousels, des accordéons, bref tout et très simplement...</div>",
   },
   {
     langage: 'php',
     title: 'PHP : créer des sites dynamiques',
     content:
-      "Etrange ! j'ai commencé a apprendre JQuery avec Javascript... mais l'un n'empeche pas l'autre. Avec JQuery on peut manipuler son DOM a l'infini.",
+      "<div>PHP a longtemps été le langage indispensable pour réaliser des sites dynamiques et dynamiques/Statiques.</div><div class='view php'></div><div>➡️ Il permet l'accès à une base et fetcher ses données</div><div>➡️ Il permet de fragmenter le code pour éviter de répéter des milliers de lignes de code.</div><div> Php pouvait tout faire ou presque. on peut l'animer grâce à JQuery, le rendre Responsive avec Bootstrap par exemple. Php est encore au coeur de la plupard des CMS.</div>",
   },
   {
-    langage: 'jquery',
-    title: "L'outil idéal pour commencer à animer ses sites",
+    langage: 'cms',
+    title: 'Les CMS : les couteaux suisses.',
     content:
-      "Etrange ! j'ai commencé a apprendre JQuery avant Javascript... mais l'un n'empeche pas l'autre. Avec JQuery on peut manipuler son DOM a l'infini.",
+      "<div class='view cms'></div><div>En découvrant WordPress, j'ai découvert les CMS. Le travail from scratch est déjà prêt. De plus, de nombreux CMS sont disponibles gratuitement.</div><div> Cela m'a été utile pour créer des sites pour des proches et pour qu'ils puissent gérer leurs contenus eux-mêmes.</div><div> Ensuite, il y a PrestaShop. J'ai réalisé un site de vente en ligne de carpes de collection, de matériel nécessaire et de nourriture. Des modules souvent libres ont été utilisés, comme RockPOS pour la caisse matérielle, un module de livraison Colissimo, et d'autres encore. Des blocs de code développés par Webaxx (libres) ont été intégrés.</div><div> Quand on connaît WordPress, les autres CMS sont presque dans le même esprit et l'apprentissage est plus rapide. WordPress utilise Symfony pour le back-end et des thèmes pour le front-end.</div>",
   },
   {
     langage: 'javascript',
-    title: 'Désormais mon langage de prédilection',
+    title: 'JAVASCRIPT : mon langage de prédilection',
     content:
-      "Voilà nous y somme : ma 1ere formation à la WildCodeSchool, j'ai appris à utiliser Javascript. On peut tout faire avec ce langage. On peut faire des APIs (NodeJS + Express) on peut faire du Front avec React, des applications Mobile avec ReactNative. Là où certains ne jurent que par python et ca capacité à tout faire, Javascript peut faire de même. Ce langage est juste génial. Je ne suis pas encore aguérit sur le sujet par manque de pratique mais il y aussi TypeSCript. Les créateur de VB.Net on su adapté une surcouche Javascript permettant le typage du code et de tout les avantages que cela représente.",
+      "Voilà nous y somme : ma 1ere formation à la WildCodeSchool grâce à laquelle j'ai appris à utiliser Javascript. <br/><br/>JavaScript peut avec ES6 générer du code asynchrone plus performant que PHP. On peut tout faire avec ce langage. On peut faire des APIs (NodeJS + Express) on peut faire du Front avec React, des applications Mobile avec ReactNative. Là où certains ne jurent que par python et ca capacité à tout faire, Javascript peut faire de même. Ce langage est juste génial. Je ne suis pas encore aguérit sur le sujet par manque de pratique mais il y aussi TypeSCript. Les créateur de VB.Net on su adapté une surcouche Javascript permettant le typage du code et de tout les avantages que cela représente.",
   },
   {
     langage: 'nodejs',
