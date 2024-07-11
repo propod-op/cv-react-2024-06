@@ -10,7 +10,7 @@ export const SectionPortefolio = () => {
   const [showToast, setShowToast] = useState(false);
 
   const sectionRef = useRef(null); // Correctly define the sectionRef here
-  const { isDisplayed } = useHtmlElementIsDisplayed(sectionRef, 300);
+  const { isDisplayed } = useHtmlElementIsDisplayed(sectionRef, 400);
   const exposedClass = isDisplayed ? 'exposed' : 'notExposed';
 
   const onClose = () => setShowToast(false);
@@ -18,7 +18,7 @@ export const SectionPortefolio = () => {
   return (
     <section id="POR" className={`portefolio ${exposedClass}`} ref={sectionRef}>
       <h2>PORTEFOLIO</h2>
-      <button onClick={() => setShowToast(true)}>Toast it !</button>
+      {/* <button onClick={() => setShowToast(true)}>Toast it !</button> */}
       <Toast
         visible={showToast}
         style="success"

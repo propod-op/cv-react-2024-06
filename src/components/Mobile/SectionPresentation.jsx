@@ -31,14 +31,15 @@ export const SectionPresentation = () => {
         <p className="je-suis pm-1">
           JE SUIS <span className="">OLIVIER</span>
         </p>
-        <p>
-          Issu de 15 ans d’expérience dans l’imprimerie, j’ai décidé de
-          poursuivre mon parcours dans le domaine du numérique et plus
-          précisément en développement FRONT REACT
+        <p className="paragraphe">
+          "Issu de 15 ans d’expérience dans l’imprimerie, j’ai décidé de
+          poursuivre mon parcours dans le domaine du numérique et en me
+          spécialisant sur le développement FRONT REACT..."
         </p>
-        <br />
-        Découvrons ensemble mon parcours et
-        <br /> mes compétences...
+        <p className="le-site">
+          Vous trouverez sur le site mon parcours de développeur, des débuts
+          avec VB.Net jusqu'à aujourd'hui avec Javascript
+        </p>
       </div>
       <a href="#PAR" className="">
         <button

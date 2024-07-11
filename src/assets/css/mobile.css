@@ -108,7 +108,6 @@ section h2 {
   font-family: var(--font-overpass);
   font-weight: 900;
   font-style: normal;
-  padding-left: 1.5rem;
 }
 
 section h3 {
@@ -171,6 +170,8 @@ section.presentation {
 
 section.presentation h2 {
   position: absolute;
+  padding-left: 3rem;
+  margin-top: 1rem;
   z-index: 3;
 }
 
@@ -214,6 +215,25 @@ section.presentation p.je-suis {
   color: var(--color-pm-1);
 }
 
+section.presentation p.paragraphe {
+  line-height: 1.5;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3rem;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+}
+
+section.presentation p.le-site {
+  color: var(--color-pm-1);
+  line-height: 1.5;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  font-size: 1.3rem;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* ----------- PARCOURS -------------- */
 
 section.parcours {
@@ -222,14 +242,35 @@ section.parcours {
   justify-content: flex-start;
   align-items: center;
 
+  min-height: 100vh;
   height: auto;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
+  padding-bottom: 10rem;
 
   background-color: var(--color-pm-1);
 }
+
 section.parcours h2 {
-  color: var(--color-pm-2);
+  color: var(--color-pm-3);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+section.parcours div.philosophie {
+  width: calc(100% - 6rem);
+  padding: 2rem;
+  color: white;
+
+  font-family: 'EB Garamond', serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+section.parcours > p {
+  margin: 0;
+  padding: 0;
 }
 
 section.parcours img.parcours {
@@ -286,7 +327,6 @@ section.contactez-moi h2 {
   padding-left: unset;
   text-align: center;
   font-size: 2rem;
-  margin: 0 auto 1rem auto;
 }
 
 section.contactez-moi form {
