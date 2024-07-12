@@ -49,22 +49,14 @@ export const bubblesContent = [
   },
   {
     langage: 'react',
-    title: 'Ou, comment créer des serveurs',
+    title: 'Des interfaces Rapides',
     content:
-      "Voilà nous y somme : ma 1ere formation à la WildCodeSchool, j'ai appris à utiliser Javascript. On peut tout faire avec ce langage. On peut faire des APIs (NodeJS + Express) on peut faire du Front avec React, des applications Mobile avec ReactNative. La ou certains ne jurent que par python et ca capacité à tout faire, Javascript peut faire de même. Ce langage est juste génial.",
+      "<div>React au début c'est peu spécial. Mais lorsque l'on commence a comprendre les fondements, ca devient très sympa.</div>Mais ce qui prone c'est son éfficacité. Il peut être combiné à TypeScript (que je doit encore apprendre).<div>",
   },
   {
     langage: 'reactnative',
-    title: 'Ou, comment créer des serveurs',
+    title: 'Des interfaces mobile sur tout OS',
     content:
-      "Voilà nous y somme : ma 1ere formation à la WildCodeSchool, j'ai appris à utiliser Javascript. On peut tout faire avec ce langage. On peut faire des APIs (NodeJS + Express) on peut faire du Front avec React, des applications Mobile avec ReactNative. La ou certains ne jurent que par python et ca capacité à tout faire, Javascript peut faire de même. Ce langage est juste génial.",
+      "A l'école nous avons étudié l'utilisation de React Native.RN permet de coder des UI en React et des compiler vers un OS spécifique. Nous avons utilisé expo pour emuler un mobile et utilisé JavaScript et React pour l'UI. React Native permet : le code Partagé, les composants Natifs ,Hot Reloading , Accès aux APIs Natifs, Écosystème React : Bénéficie de l'écosystème et des concepts de React.",
   },
-  //   {
-  //     langage: 'cms',
-  //     title: 'Les CMS : Idéal pour faire des sites complexes rapidement...',
-  //     contentImage: 'cms',
-  //     content: `En découvrant Wordpress, j'ai décourvert les CMS. Le travaille from scratch est déjà prêt. De plus nombres de CMS sont gratuits. Cela m'a été utlise pour créer des sites pour des proches et qu'ils puissent gérer leurs contenus eux même.
-  //       Ensuite Il y a Prestashop. J'ai réalisé un site de vente en ligne de carpes de collection, du matériel necessaire et de la nourriture. Des modules souvent ibres ont été utilisés comme
-  //     RockPOS pour la caisse matérielle, un module de livraison colissimo, et d'autres encore. Des blocs de code developpés par Webaxx (libres) on été intégrés. Quand ont connait Wordpress, les autres CMS sont presque dans le même esprit et l'apprentissage est plus rapide. Wordpress utile Symfony pour le Back et des thèmes pour le front.`,
-  //   },
 ];

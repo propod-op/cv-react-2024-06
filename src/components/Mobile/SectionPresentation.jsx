@@ -37,8 +37,8 @@ export const SectionPresentation = () => {
           spécialisant sur le développement FRONT REACT..."
         </p>
         <p className="le-site">
-          Vous trouverez sur le site mon parcours de développeur, des débuts
-          avec VB.Net jusqu'à aujourd'hui avec Javascript
+          Vous trouverez sur le site, mon parcours de développeur, des débuts
+          avec VB.Net jusqu'à aujourd'hui avec Javascript.
         </p>
       </div>
       <a href="#PAR" className="">
