@@ -1,63 +1,124 @@
-div.App {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-.color-primary {
-  color: #2a546c;
-}
-
-.bg-color-primary {
-  background-color: #2a546c;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.6s ease-out;
-}
-
-.fade-in.show {
-  opacity: 1;
-}
-
 div.main-container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
   width: 100vw;
   height: auto;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: 100vh;
-  border-top: 2px solid #777;
+  width: 100vw;
+  height: auto;
+}
+
+a button,
+a {
+  border: none;
+  text-decoration: none;
+}
+
+button.pm-1 {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+  align-items: center;
+
+  min-width: 2rem;
+  width: auto;
+  height: 2rem;
+  padding-top: 0.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 1rem auto 1rem auto;
+
+  font-family: var(--font-overpass);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #2a546c;
+  color: var(--color-pm-2);
+  border-radius: 2rem;
+  z-index: 10;
+}
+
+button.pm-1:hover {
+  background-color: var(--color-pm-3);
+  color: var(--color-pm-1);
 }
 
 section h2 {
   width: 100%;
-  padding-left: 3.5rem;
-  font-size: 5rem;
-  font-family: 'Josefin Sans', sans-serif;
+  color: var(--color-pm-3);
+  font-size: 2.5rem;
+  font-family: var(--font-overpass);
   font-weight: 900;
   font-style: normal;
 }
 
+section h3 {
+  margin: 1rem;
+  line-height: 1.25;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--font-beanie);
+  color: var(--color-pm-2);
+  background-color: var(--color-pm-5);
+  background-image: url('../images/texture-ardoise.jpg');
+  padding: 0.5rem;
+
+  border-radius: 0.5rem;
+  border-color: #cea46e;
+  border-width: 0.4rem;
+  border-style: solid;
+}
+
+h4 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  font-family: var(--font-sofia);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.25rem 0;
+}
+hr {
+  width: 80%;
+  border: none;
+  height: 6px; /* L'épaisseur du <hr> */
+  background: repeating-linear-gradient(
+    to right,
+    black 0,
+    black 8px,
+    transparent 10px,
+    transparent 15px
+  );
+  border-radius: 100%; /* Pour rendre les tirets ronds */
+}
+
+p {
+  font-family: var(--font-josephine);
+  color: var(--color-pm-5);
+}
+
+.bg-dotted {
+  background-color: var(--color-pm2);
+  background-repeat: repeat;
+  background-size: 48px;
+  background-image: url('../images/fond-points.jpg');
+}
+/* 
 div.column {
   height: 100%;
 }
@@ -87,102 +148,81 @@ span.alignRight {
   top: 15rem;
 }
 /* ---------- SECTION PRESENTATION -------------- */
-section.presentation div.container {
+section.presentation {
   position: relative;
-}
-
-section.presentation div.column.left {
-  background-color: rgb(255, 255, 255);
-  width: 50%;
-  padding: 10rem;
+  display: flex;
+  justify-content: flex;
   height: auto;
 }
 
-section.presentation div.column.left div.container {
-  width: 100%;
-  height: 100%;
+section.presentation > div {
+  flex: 1;
+  max-width: 50%;
 }
 
-section.presentation div.column.left p:nth-child(1) {
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
-  color: black;
-}
-
-section.presentation div.column.left p:nth-child(2) {
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-family: 'Josefin Sans', sans-serif;
-  color: #2a546c;
-  margin: 0;
-}
-
-section.presentation div.column.left p.texte {
-  width: 30rem;
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-
-section.presentation div.column.left p.citation {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-
-  margin-top: 3rem;
-
-  font-size: 2.5rem;
-  font-family: 'Reenie Beanie', cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-section.presentation div.column.left p.citation span.phrase {
-  padding-left: 2rem;
-}
-
-section.presentation div.column.left span.guillemet-open {
-  position: absolute;
-  width: 1.5rem;
-  height: 2rem;
-  top: -5px;
-  left: 0px;
-  background-image: url('../images/guillemet-close.png');
-  background-size: 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section.presentation div.column.left span.guillemet-close {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  top: 50px;
-  left: 320px;
-  background-image: url('../images/guillemet-open.png');
-  background-size: 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section.presentation div.column.right {
+section.presentation div:nth-child(1) {
+  height: 50rem;
   width: 50%;
   background-color: rgb(28, 148, 164);
   background-image: url('../images/presentation-right.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.presentation div:nth-child(2) {
+  padding: 3rem;
+}
+
+/* HI */
+section.presentation div:nth-child(2) p:nth-child(1) {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  font-family: var(--font-1);
+  font-weight: 800;
+  color: var(--color-pm-1);
+}
+
+/* JE SUIS */
+section.presentation div:nth-child(2) p:nth-child(2) {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  font-family: var(--font-1);
+  font-weight: 800;
+  color: var(--color-pm-1);
+}
+
+section.presentation div:nth-child(2) p:nth-child(3) {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  font-family: var(--font-1);
+  font-weight: 800;
+  color: var(--color-pm-1);
+}
+
+section.presentation div:nth-child(2) p:nth-child(4) {
+  line-height: 1.5;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+}
+
+section.presentation div:nth-child(2) p:nth-child(5) {
+  line-height: 1.5;
+  /* font-family: 'EB Garamond', serif; */
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
 }
 
 /* ---------- SECTION PARCOURS -------------- */
-section.parcours {
+/*section.parcours {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -235,10 +275,10 @@ section.parcours div.column.left {
 section.parcours div.column.right {
   width: 40%;
   height: 100%;
-}
+}*/
 
 /* ---------- SECTION PORTEFOLIO -------------- */
-section.portefolio {
+/*section.portefolio {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -277,7 +317,6 @@ section.portefolio div.content ul li {
   line-height: 1.75;
   font-size: 1.5rem;
   font-family: 'Overpass', sans-serif;
-  /*font-family: "Josefin Sans", sans-serif;*/
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
@@ -287,10 +326,10 @@ section.portefolio img {
   width: 80%;
   height: auto;
   margin-left: 3rem;
-}
+} */
 
 /* ---------- SECTION CONTACTEZ-MOI -------------- */
-section.contactez-moi {
+/*section.contactez-moi {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -348,4 +387,4 @@ section.contactez-moi textarea {
   width: calc(100% - 2rem);
   height: 10rem;
   padding: 1rem;
-}
+} */

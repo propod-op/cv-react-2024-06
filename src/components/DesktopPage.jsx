@@ -1,23 +1,13 @@
-import '../assets/css/fonts.css';
-
-import { isMobile } from 'react-device-detect'; // ajuste le chemin selon l'emplacement de ton fichier
-import React, { useState } from 'react';
-
-import { Scotch } from '../components/commons/Scotch';
 import { SectionPresentation } from './Desktop/SectionPresentation';
 import { SectionParcours } from './Desktop/SectionParcours';
 import { SectionPortefolio } from './Desktop/SectionPortefolio';
 import { SectionContactezMoi } from './Desktop/SectionContactezMoi';
-
-if (!isMobile) {
-  import('../assets/css/desktop.css');
-} else {
-  import('../assets/css/mobile.css');
-}
+import { MenuBar } from './MenuBar';
 
 export const DesktopPage = () => {
   return (
     <div className="main-container wide">
+      <MenuBar />
       <SectionPresentation />
       <SectionParcours />
       <SectionPortefolio />

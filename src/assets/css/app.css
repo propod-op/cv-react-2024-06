@@ -1,0 +1,38 @@
+body {
+  --color-pm-1: #2a546c;
+  --color-pm-2: #e9e8de;
+  --color-pm-3: #e9b715;
+  --color-pm-4: #b93a31;
+  --color-pm-5: #292929;
+
+  --font-josephine: 'Josefin Sans', sans-serif; /*Police sans serif */
+  --font-overpass: 'Overpass', sans-serif; /* Police type ROBOTO */
+  --font-julius: 'Julius Sans One', sans-serif; /* Police type sans serif medievale */
+  --font-amatic: 'Amatic SC', sans-serif; /* Police sans serif Manuscrite */
+  --font-sofia: 'Sofia Sans Semi Condensed', sans-serif;
+  --font-beanie: 'Reenie Beanie', cursive; /* Police manuscrite tableau craie */
+  --font-roboto: 'Roboto', sans-serif; /* Police Sans serif */
+}
+
+.pm-1 {
+  color: var(--color-pm-1);
+}
+
+.bg-pm-1 {
+  background-color: var(--color-pm-1);
+}
+
+div.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body * {
+  position: relative;
+}

@@ -1,58 +1,53 @@
-import React, { useState, useEffect } from 'react';
-import { Scotch } from '../commons/Scotch';
+import { useRef } from 'react';
+import { useHtmlElementIsDisplayed } from '../../hooks/useHtmlElementIsDisplayed';
+import '../../assets/css/scrollEffect.css';
 
 export const SectionPresentation = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const sectionRef = useRef(null); //  Définition de l'élément HTML <Section> dans un ref={sectionRef} en argument
 
-  const handleScroll = (e) => {
-    const position = e.target.scrollPosition;
-    setScrollPosition(position);
-  };
+  // Cas cde figure n°1 (plus spécifique mais plus facile à comprendre)
+  const { isDisplayed } = useHtmlElementIsDisplayed(sectionRef, 300, true);
+  const exposedClass = isDisplayed ? 'exposed' : 'notExposed';
 
-  useEffect(() => {
-    console.log(scrollPosition);
-  }, [scrollPosition]);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
+  // Cas cde figure n°2 (plus ouvert mais plus compliqué à comprendre)
+  // const { scrollConditionIsVerified } = useScrollCondition((scrollPosition) => {
+  //   return (
+  //     scrollPosition >= sectionRef.current.offsetTop &&
+  //     scrollPosition < sectionRef.current.offsetHeight - 300
+  //   );
+  // }, true);
+  // const exposedClass = scrollConditionIsVerified ? 'exposed' : 'notExposed';
 
   return (
-    <section className={`presentation fade-in ${isVisible ? 'show' : ''}`}>
-      <div className="column left">
-        <div className="container">
-          <p>Hi everybody !</p>
-          <p>
-            JE SUIS <span>OLIVIER</span>
-          </p>
-          <p></p>
-          <span className="alignRight">
-            <Scotch
-              className=""
-              on="desktop"
-              text={'REACT Developper'}
-              angle={-3}
-              size={'long'}
-              style={{ marginLeft: '4rem' }}
-            />
-          </span>
-          <p className="texte">
-            Issu de 15 ans d’expérience dans l’imprimerie, j’ai décidé de
-            poursuivre mon parcours dans le domaine du numérique et plus
-            précisément en développement FRONT REACT
-          </p>
-          <p className="citation">
-            <span className="guillemet-open"></span>
-            <span className="phrase">
-              Découvrons ensemble mon parcours <br />
-              et mes compétences...
-              <span className="guillemet-close"></span>
-            </span>
-          </p>
-        </div>
+    <section
+      id="PRE"
+      className={`presentation bg-dotted ${exposedClass}`}
+      ref={sectionRef}
+    >
+      <div className="photo"></div>
+
+      <div>
+        <h2>PRESENTATION</h2>
+        <p>Hi everybody !</p>
+        <p>JE SUIS OLIVIER</p>
+        <p>
+          "Issu de 15 ans d’expérience dans l’imprimerie, j’ai décidé de
+          poursuivre mon parcours dans le domaine du numérique et en me
+          spécialisant sur le développement FRONT REACT..."
+        </p>
+        <p>
+          Vous trouverez sur le site, mon parcours de développeur, des débuts
+          avec VB.Net jusqu'à aujourd'hui avec Javascript.
+        </p>
       </div>
-      <div className="column right"></div>
+      {/* <a href="#PAR" className="">
+        <button
+          className="pm-1"
+          style={{ marginBottom: '5rem', width: '4rem' }}
+        >
+          Suite ➜
+        </button>
+      </a> */}
     </section>
   );
 };
