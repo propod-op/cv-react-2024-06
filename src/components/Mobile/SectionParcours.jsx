@@ -1,9 +1,8 @@
 import { useRef } from 'react';
-import parcours from '../../assets/images/parcours-courbes-white.svg';
-import '../../assets/css/scrollEffect.css';
 import { useHtmlElementIsDisplayed } from '../../hooks/useHtmlElementIsDisplayed';
 import { Bubble } from '../commons/Bubble';
 import { bubblesContent } from '../../assets/bubblesContent';
+import '../../assets/css/scrollEffect.css';
 
 export const SectionParcours = () => {
   const sectionRef = useRef(null); // Correctly define the sectionRef here

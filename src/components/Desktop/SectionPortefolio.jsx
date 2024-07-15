@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Scotch } from '../commons/Scotch';
-import portefolio from '../../assets/images/portefolio-onceagain.jpg';
 
 export const SectionPortefolio = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <section className="portefolio">
-      <h2>
-        PORTEFOLIO{' '}
-        <div className="scotch-position-1">
+    <section id="POR" className="portefolio bg-dotted">
+      <h2>PORTEFOLIO</h2>
+      <section className="separator"></section>
+      <section className="onceagain">
+        <div className="column image"></div>
+
+        <div className="column content">
           <Scotch
             className=""
             on="desktop"
@@ -18,70 +20,129 @@ export const SectionPortefolio = () => {
             size={'long'}
             style={{ marginLeft: '4rem' }}
           />
+          *
+          <div className="title">
+            Le site ONCEAGAIN.fr : plus de fonctinnalités et mise à jour du
+            thème
+          </div>
+          <p>
+            "J'ai eu la chance de travailler pour le site OnceAgain.fr, mes
+            missions on consisté à :"
+          </p>
+          <ul>
+            <li>
+              Implémentation d'une page de produit avec son filtre de produits.
+              Il a fallut apprendre LIQUID et le combiner avec du JAVASCRIPT
+              pour pouvoir étendre les capacités du site.
+            </li>
+            <li>
+              Mise à jour de la charte graphique et du thème en langage
+              <i>"Liquid"</i> en suivant les spécifités d'une graphiste.
+            </li>
+            <li>
+              Ajout de fonctionnalités (page compte client avec un wallet, des
+              points bonus etc...
+            </li>
+          </ul>
         </div>
-      </h2>
-      <div className="content">
-        <p>
-          J'ai eu la chance de travailler pour le site OnceAgain.fr, mes
-          missions :
-        </p>
+      </section>
+      <section className="separator"></section>
+      <section className="rca rca-1">
+        <div className="column image"></div>
 
-        <ul>
-          <li>Création d'une page de produit avec son filtre de produits.</li>
-          <li>Mise à jour de la charte graphique</li>
-          <li>Ajout de fonctionnalités</li>
-        </ul>
-      </div>
+        <div className="column content">
+          <Scotch
+            className=""
+            on="desktop"
+            text={'RCA (fabricant de tampons)'}
+            angle={1}
+            size={'long'}
+            style={{ marginLeft: '4rem' }}
+          />
 
-      <img src={portefolio} alt="onceagain-homepage" />
-      <div className="content">
-        <p>
-          J'ai réalisé quelques applications VB.Net pour l'entreprise de tampons
-          pour laquelle je travaillais.
-        </p>
+          <div className="title">
+            {' '}
+            Création d'une application nommée : "XPsuite 2017"
+          </div>
+          <p>
+            "En travaillant chez RCA, j'ai eu envie de mettre en place des
+            procédures, des outils et des projets..."
+          </p>
+          <ul>
+            <li>
+              L'application XPsuite permet d'enregistrer les numéros de
+              commandes des expéditions.
+            </li>
+            <li>
+              Elle permet de regrouper les expeditions différentes pour des
+              clients identiques
+            </li>
+            <li>Une sauvegarde au format XML.</li>
+            <li>
+              Possibilité d'imprimer une journée d'éxpéditions ou enregistrer au
+              format PDF.
+            </li>
+            <li>
+              Possibilité d'effectuer des recherches par date et par n°
+              expédition.
+            </li>
+          </ul>
+        </div>
+      </section>{' '}
+      <section className="separator"></section>
+      <section className="rca rca-2">
+        <div className="column image"></div>
 
-        <ul>
-          <li>
-            J'ai commencé par des macro VB dans CorelDraw, automatisant des
-            taches associées à des raccourcis clavier.
-          </li>
-          <li>Puis XPsuite, une application de gestion des expéditions. </li>
-          <li>
-            Parmis ses fonctionnalités, la possibilité d'imprimer en PDF le
-            tableau des expéditions de la semaine.
-          </li>
-          <li>
-            J'ai commencé une étude de faisabilité d'un produit encore
-            inexistant : le tampon numérique.
-          </li>
-        </ul>
-      </div>
-      <div className="content">
-        <p>J'ai réalisé des sites en PHP statiques...</p>
+        <div className="column content">
+          <div className="title">Le PROJET de E-STAMP (Tampon numérique)</div>
+          <p>
+            "Avant la fermeture de l'entreprise, j'avais travaillé sur un projet
+            de taille : un "tampon numérique"
+          </p>
 
-        <ul>
-          <li>
-            <b>Loveradio : </b>C'était (site non maintenu) une radio en
-            streaming sur un site de flux musicaux. Je lui ai créé une interface
-            "NY street", avec la météo, la jaquette et les informations sur le
-            titre en cours de lecture grâce à des API publiques, des infos
-            concert etc...
-          </li>
-          <li>
-            <b>ASC-ING.fr :</b> un site d'une société d'ingénieurie de systèmes
-            de surveillance.
-          </li>
-          <li>
-            <b>Passionkoi28.com :</b> mon 1er CMS en production. Grâce auquel,
-            j'ai appris beaucoup sur le CMS Prestashop.
-          </li>
-          <li>
-            <b>Statera-vita.fr :</b> Site pour une professionnelle des médécines
-            douces.
-          </li>
-        </ul>
-      </div>
-      <div></div>
+          <ul>
+            <li>
+              Le projet de tampon se déclinait de plusieurs façons :
+              <ul>
+                <li>
+                  La finition en bois ou en plastique noir recyclé (et logo led
+                  vert).
+                </li>
+                <li>
+                  Une version avec écran tactile application par pression et une
+                  sans écran piloté par mobile.
+                </li>
+                <li>
+                  Une version avec un Raspberry et une version avec Arduino.
+                </li>
+              </ul>
+            </li>
+
+            <li>Réalisation de vues en 3D.</li>
+            <li>Montage d'un dossier sur la propriété intellectuelle.</li>
+            <li>
+              Recherche de partenaires pour la partie mécanique, la partie
+              électronique, la partie logicielle.
+            </li>
+            <li>
+              Le projet touche les client comme les ambassades qui utilisent de
+              nombreux tampons à la fois (cela prend de la place, du cout, du
+              CO2 etc... 10 ou 20 tampons en 1 seul).
+            </li>
+            <li>
+              Le projet permet de gérer informatiquement ses tampons de puis une
+              application en ligne ou desktop avec un format de tampons
+              numériques dédié (.pni).
+            </li>
+            <li>plus de délai de commande et réception.</li>
+            <li>
+              Le projet permet de toucher plus de client comme pour le
+              scrapbooking ou autres...
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="separator"></section>
     </section>
   );
 };

@@ -1,6 +1,6 @@
 .menubar {
   position: fixed;
-  z-index: 10;
+  z-index: 30;
   bottom: 1.5rem;
 
   display: flex;

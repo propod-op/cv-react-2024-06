@@ -9,16 +9,6 @@
   /* background-color: red; */
 }
 
-.bubble-container::before {
-  content: '';
-  position: absolute;
-  top: 2rem;
-  bottom: 2rem;
-  left: 50%;
-  border-left: 4px dashed rgb(255, 255, 255); /* Style du trait vertical en pointillés */
-  transform: translateX(-50%);
-}
-
 .bubble {
   display: flex;
   flex-direction: row;

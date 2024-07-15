@@ -36,18 +36,14 @@ export const SectionPresentation = () => {
           spécialisant sur le développement FRONT REACT..."
         </p>
         <p>
-          Vous trouverez sur le site, mon parcours de développeur, des débuts
-          avec VB.Net jusqu'à aujourd'hui avec Javascript.
+          J'ai commencé comme auto-entrepreneur avec des sites statiques. Puis
+          j'ai suivi des formations à la WildcodeSchool et réalisé un stage chez
+          Onceagain.fr, une boutique en ligne de vente de vêtement de seconde
+          main. Vous trouverez sur le site, mon parcours de développeur, des
+          débuts avec VB.Net jusqu'à aujourd'hui avec Javascript.
         </p>
+        <p>Olivier.</p>
       </div>
-      {/* <a href="#PAR" className="">
-        <button
-          className="pm-1"
-          style={{ marginBottom: '5rem', width: '4rem' }}
-        >
-          Suite ➜
-        </button>
-      </a> */}
     </section>
   );
 };

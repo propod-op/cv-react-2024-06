@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Scotch } from '../commons/Scotch';
+import SvgIcon from '../Mobile/SvgIcon';
 
 export const SectionContactezMoi = () => {
   const [emailData, setEmailData] = useState({
@@ -39,48 +40,43 @@ export const SectionContactezMoi = () => {
   };
 
   return (
-    <section className="contactez-moi">
-      <div className="column left">
-        <h2>CONTACTEZ-MOI</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="scotch-contactez-moi-1">
-            <Scotch
-              on="desktop"
-              text={'Votre adresse e-mail'}
-              angle={-3}
-              size={'long'}
-              style={{ marginLeft: '4rem' }}
-            />
-          </div>
-          <input
-            type="text"
-            name="user_email"
-            placeholder="Your email"
-            value={emailData.user_email}
-            onChange={handleChange}
-            required
-          />
-          <div className="scotch-contactez-moi-2">
-            <Scotch
-              on="desktop"
-              text={'Votre message'}
-              angle={1}
-              size={'long'}
-              style={{ marginLeft: '2rem' }}
-            />
-          </div>
-          <textarea
-            name="message"
-            placeholder="Message"
-            value={emailData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-          <p>Cocher avant d'envoyer</p>
-          <button type="submit">Envoyer le mail</button>
-        </form>
-      </div>
-      <div className="column right"></div>
+    <section id="CON" className="contactez-moi">
+      <h2>CONTACTEZ-MOI</h2>
+      <form onSubmit={handleSubmit}>
+        <Scotch
+          on="desktop"
+          text={'Votre adresse e-mail'}
+          angle={-3}
+          size={'short'}
+          style={{ marginLeft: '4rem' }}
+        />
+        <input
+          type="text"
+          name="user_email"
+          placeholder="Votre email"
+          value={emailData.user_email}
+          onChange={handleChange}
+          required
+        />
+        <Scotch
+          on="desktop"
+          text={'Votre message'}
+          angle={1}
+          size={'long'}
+          style={{ marginLeft: '2rem' }}
+        />
+        <textarea
+          name="message"
+          placeholder="Votre message"
+          value={emailData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
+        {/* <p>Cocher avant d'envoyer</p> */}
+        <button type="submit">
+          Envoyer le mail <SvgIcon fillColor="#e9e8de" />
+        </button>
+      </form>
     </section>
   );
 };

@@ -131,9 +131,10 @@ section.presentation {
 
 section.presentation h2 {
   position: absolute;
-  padding-left: 3rem;
   margin-top: 1rem;
   z-index: 3;
+  text-align: center;
+  font-size: 3rem;
 }
 
 section.presentation div.photo {
@@ -143,7 +144,7 @@ section.presentation div.photo {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center -2rem;
-  background-image: url('../images/presentation-olivier-2.jpg');
+  background-image: url('../images/presentation/olivier.jpg');
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -214,6 +215,7 @@ section.parcours h2 {
   color: var(--color-pm-3);
   text-align: center;
   margin-bottom: 0;
+  font-size: 4rem;
 }
 
 section.parcours div.philosophie {
@@ -244,15 +246,24 @@ section.parcours p {
   line-height: 1.2;
 }
 
+.bubble-container::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  bottom: 2rem;
+  left: 50%;
+  border-left: 4px dashed rgb(255, 255, 255); /* Style du trait vertical en pointillés */
+  transform: translateX(-50%);
+}
+
 /* ----------- PORTEFOLIO -------------- */
 section.portefolio {
   height: auto;
-  background-repeat: repeat;
-  background-size: 64px;
-  background-image: url('../images/fond-points.jpg');
 }
 section.portefolio h2 {
   margin: 0.5rem 0;
+  font-size: 4rem;
+  text-align: center;
 }
 
 section.portefolio > div {

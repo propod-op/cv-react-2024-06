@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
 import { Scotch } from '../commons/Scotch';
 import { Toast } from '../commons/Toast';
-import portefolio from '../../assets/images/portefolio-onceagain.jpg';
-import estamp from '../../assets/images/projet-estamp.png';
-import xpsuite from '../../assets/images/projet-xpsuite.png';
 import { useHtmlElementIsDisplayed } from '../../hooks/useHtmlElementIsDisplayed';
+import portefolio from '../../assets/images/portefolio/onceagain.jpg';
+import estamp from '../../assets/images/portefolio/projet-estamp.png';
+import xpsuite from '../../assets/images/portefolio/projet-xpsuite.png';
 
 export const SectionPortefolio = () => {
   const [showToast, setShowToast] = useState(false);
@@ -16,7 +16,11 @@ export const SectionPortefolio = () => {
   const onClose = () => setShowToast(false);
 
   return (
-    <section id="POR" className={`portefolio ${exposedClass}`} ref={sectionRef}>
+    <section
+      id="POR"
+      className={`portefolio bg-dotted ${exposedClass}`}
+      ref={sectionRef}
+    >
       <h2>PORTEFOLIO</h2>
       {/* <button onClick={() => setShowToast(true)}>Toast it !</button> */}
       <Toast
