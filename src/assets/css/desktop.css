@@ -345,9 +345,16 @@ section.portefolio > section > div.column.content {
 }
 
 section.portefolio > section > div.column.content > p {
-  font-family: 'Reenie Beanie', cursive;
+  /* font-family: 'Reenie Beanie', cursive; */
   /* font-family: 'Amatic SC', sans-serif; */
-  font-size: 2rem;
+  /* font-family: 'Sofia Sans Semi Condensed', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--color-pm-1);
 }
 
 section.portefolio > section > div.column.content > div.title {
@@ -431,9 +438,9 @@ section.portefolio > section.rca-2 {
 
 section.portefolio > section.rca-2 > div.column.image {
   z-index: 20;
-  height: 30rem;
+  height: 40rem;
   width: 100%;
-  background-image: url('../images/portefolio/projet-estamp.png');
+  background-image: url('../images/portefolio/kit-estamp.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

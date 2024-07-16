@@ -27,13 +27,16 @@ export const SectionPortefolio = () => {
           </div>
           <p>
             "J'ai eu la chance de travailler pour le site OnceAgain.fr, mes
-            missions on consisté à :"
+            missions on consisté à étendre une limitation de Shopify. Cela a pu
+            êtr epossible en combinant JAVASCRIPT à au langage LIQUID. Puis il a
+            fallut créer une page de produit sur mesure avec son filtre intégré.
+            Une fois la mission achevé nous avons pu réaliser d'autres tâches."
           </p>
           <ul>
             <li>
-              Implémentation d'une page de produit avec son filtre de produits.
-              Il a fallut apprendre LIQUID et le combiner avec du JAVASCRIPT
-              pour pouvoir étendre les capacités du site.
+              Implémentation d'une page de produit avec son filtre de produits
+              personnalisé : Il a fallut apprendre LIQUID et le combiner avec du
+              JAVASCRIPT pour pouvoir étendre les capacités du site.
             </li>
             <li>
               Mise à jour de la charte graphique et du thème en langage
@@ -66,15 +69,23 @@ export const SectionPortefolio = () => {
           </div>
           <p>
             "En travaillant chez RCA, j'ai eu envie de mettre en place des
-            procédures, des outils et des projets..."
+            procédures, des outils et des projets... J'ai commencé avec un tout
+            petit projet : un programme en VB.net qui enregistre les n°de
+            commandes recues par fax pour éviter les doublons de commandes.
+            <br></br>Puis mon responsable m'a confié une demande plus
+            conséquente : un logiciel d'enregistrement, de suivi et d'archivage
+            des commandes pour les différents client de la société. De la est né
+            le projet VB.Net : XPSuite 2017. Une version WEB en local était
+            prévue en PHP..."
           </p>
           <ul>
+            <li>L'application XPsuite est mon 1er projet VB.Net complet.</li>
             <li>
               L'application XPsuite permet d'enregistrer les numéros de
               commandes des expéditions.
             </li>
             <li>
-              Elle permet de regrouper les expeditions différentes pour des
+              XPSuite permet de regrouper les expeditions différentes pour des
               clients identiques
             </li>
             <li>Une sauvegarde au format XML.</li>
@@ -86,6 +97,7 @@ export const SectionPortefolio = () => {
               Possibilité d'effectuer des recherches par date et par n°
               expédition.
             </li>
+            <li>Intégration d'un installateur InnoSetup</li>
           </ul>
         </div>
       </section>{' '}
@@ -97,7 +109,9 @@ export const SectionPortefolio = () => {
           <div className="title">Le PROJET de E-STAMP (Tampon numérique)</div>
           <p>
             "Avant la fermeture de l'entreprise, j'avais travaillé sur un projet
-            de taille : un "tampon numérique"
+            de taille : un "tampon numérique. J'ai étudié la faisabilité,
+            prototypé en 3D avec Blender, j'ai étudié les brevets, recherché des
+            partenaires... "
           </p>
 
           <ul>
