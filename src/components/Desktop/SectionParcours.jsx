@@ -16,12 +16,12 @@ export const SectionParcours = () => {
       <div>
         <div className="philosophie">
           "Issu de l'imprimerie, j'ai toujours voulu créer des outils utiles
-          pour mes proches ou mes patrons. Lorsque l'on commence à programmer on
-          imagine plein de choses qui nous paraissent lointaines en terme de
-          réalisation. De petits projets en plus grands, on voit sa connaissance
-          s'élargir. Puis le verrou saute, on réalise que l'on comprends les
-          rouages, la syntaxe, puis les procédures. Et la porte s'ouvre aux
-          projets..."
+          pour mes proches ou mes patrons. Lorsque l'on commence à programmer,
+          on imagine plein de choses qui nous paraissent lointaines en termes de
+          réalisation. De petits projets en plus grands, on voit ses
+          connaissances s'élargir. Puis le verrou saute, on réalise que l'on
+          comprend les rouages, la syntaxe, puis les procédures. Et la porte
+          s'ouvre aux projets..."
         </div>
         <p>(Cliquez sur les éléments pour plus de détails)</p>
       </div>

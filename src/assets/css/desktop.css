@@ -331,6 +331,14 @@ section.portefolio h2 {
   text-align: center;
 }
 
+section.portefolio > div.introduction {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  margin: auto;
+}
+
 section.portefolio > section {
   min-height: 30rem;
 }
@@ -389,6 +397,12 @@ section.portefolio > section > div.column.content > ul > li > ul > li {
   margin-bottom: 1rem;
 }
 
+section.portefolio > section div.scotch {
+  font-stretch: ultra-condensed;
+  width: 550px;
+  margin-bottom: 1.5rem;
+}
+
 /* SECTION INDIVIDUELLEMENT */
 
 /* SECTION ONCEAGAIN */
@@ -426,12 +440,6 @@ section.portefolio > section.rca-1 > div.column.image {
   margin-top: 4rem;
 }
 
-section.portefolio > section.rca-1 > div.column.content > div.scotch {
-  font-stretch: ultra-condensed;
-  width: 550px;
-  margin-bottom: 1rem;
-}
-
 section.portefolio > section.rca-2 {
   flex-direction: row;
 }
@@ -445,6 +453,21 @@ section.portefolio > section.rca-2 > div.column.image {
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 2rem;
+}
+
+section.portefolio > section.java-1 {
+  flex-direction: row-reverse;
+}
+
+section.portefolio > section.java-1 > div.column.image {
+  z-index: 20;
+  height: 40rem;
+  width: calc(100% - 2rem);
+  background-image: url('../images/portefolio/schema-raspberry-sondes.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
 }
 
 /* ---------- SECTION CONTACTEZ-MOI -------------- */
@@ -461,7 +484,7 @@ section.contactez-moi {
 section.contactez-moi h2 {
   font-size: 4rem;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 section.contactez-moi form {
@@ -471,7 +494,7 @@ section.contactez-moi form {
   align-items: center;
   background-color: white;
 
-  row-gap: 2rem;
+  row-gap: 1rem;
 
   border: 1px solid #c3c3c3;
   border-radius: 0.5rem;
@@ -488,8 +511,8 @@ section.contactez-moi form button[type='submit'] {
   row-gap: 1rem;
   column-gap: 1rem;
 
-  width: 20rem;
-  height: 4rem;
+  width: 15rem;
+  height: 2.5rem;
 
   background-color: var(--color-pm-1);
   color: white;
@@ -499,15 +522,21 @@ section.contactez-moi form button[type='submit'] {
   font-family: 'Josefin Sans', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 section.contactez-moi > form > div.scotch {
   font-size: 1.5rem;
 }
 
-section.contactez-moi input {
-  width: calc(100% - 2rem);
+section.contactez-moi div.input-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes de taille égale */
+  grid-template-rows: repeat(2, 1fr); /* 2 lignes de taille égale */
+  gap: 10px; /* Espace entre les éléments de la grille */
+}
+section.contactez-moi section.contactez-moi div.input-container > input {
+  width: 100%;
 }
 
 section.contactez-moi input,
@@ -528,6 +557,11 @@ section.contactez-moi textarea {
   width: calc(100% - 2rem);
   height: 10rem;
   padding: 1rem;
+}
+
+section.contactez-moi div.send-mail {
+  display: flex;
+  flex-direction: column;
 }
 
 /* MENUBAR  DESKTOP ADAPTATION */
