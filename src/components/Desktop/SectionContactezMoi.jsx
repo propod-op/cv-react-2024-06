@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useState, useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { Scotch } from '../commons/Scotch';
+import { Toast } from '../commons/Toast';
+import { useHtmlElementIsDisplayed } from '../../hooks/useHtmlElementIsDisplayed';
 import { useEmailForm } from '../../hooks/useEmailForm';
 import { useEmailJS } from '../../hooks/useSendEmail';
+import { Scotch } from '../commons/Scotch';
 import SvgIcon from '../Mobile/SvgIcon';
 
 export const SectionContactezMoi = () => {
+  const sectionRef = useRef(null);
+  const { isDisplayed } = useHtmlElementIsDisplayed(sectionRef, 100, true);
+  const exposedClass = isDisplayed ? 'exposed' : 'notExposed';
+
   let canSendMail = false;
 
   function onChange(value) {
@@ -38,7 +43,8 @@ export const SectionContactezMoi = () => {
   };
 
   return (
-    <section id="CON" className="contactez-moi bg-dotted">
+    <section id="CON" className={`contactez-moi bg-dotted`} ref={sectionRef}>
+      <Toast />
       <form onSubmit={handleSubmit}>
         {status === 'success' && <p>Envoi OK x</p>}
         {status === 'failure' && <p>Envoi KO x</p>}

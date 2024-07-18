@@ -9,8 +9,21 @@ export const SectionPortefolio = () => {
       <h2>PORTEFOLIO</h2>
       <section className="separator"></section>
       <div className="introduction">
-        Dans cette partie je vais vous montrer mon cycle d'évolution, des
-        projets les plus récents, au premiers pas avec le code.
+        <ul>
+          <li>
+            Dans cette partie je vais vous montrer mon cycle d'évolution en
+            terme de projets des plus récents, au premiers pas avec le code.
+          </li>
+          <li>
+            Tout les projets précédent la période chez RCA sont des projets à
+            l'état de prototypes, des idées et des exercices.
+          </li>
+          <li>
+            Onceagain.fr a été ma 1ère expérience professionnelle en tant que
+            développeur. J'y ai été très bien encadré et accueilli.
+          </li>
+        </ul>
+        <br />
       </div>
       <section className="separator"></section>
       <section className="onceagain">
@@ -263,9 +276,10 @@ export const SectionPortefolio = () => {
                 <b>Propod TimeCounter </b>
               </i>
               est un outil de devis que j'avais prototypé directement dans
-              VB.net car je ne connassait pas encore Figma (heureusement j'ai
-              appris également cela l'école). Il se présentait sous forme
-              d'icône dans la barre des tâches (un serviceController) <br />
+              VB.net car je ne connaissais pas encore Figma (heureusement j'ai
+              appris également cela à la WildCodeSchool). Il se présentait sous
+              forme d'icône dans la barre des tâches (un serviceController)
+              <br />
               <b>Fonctionnement :</b> à l'aide d'un menuStrip rapide, une
               nouvelle prestation est sélectionnée (ex: 'Création d'une
               illustration' ou 'Création de Bon à tirer'), la prestation
@@ -325,9 +339,9 @@ export const SectionPortefolio = () => {
               <i>
                 <b>Passionkoi28.com </b>
               </i>
-              Un site Prestashop. Je ne connaissait pas encore Flex. Un site un
-              peu "improvisé". tout a été implémenter au fur et à mesure. Un
-              refactoring est bientot prevu pour le graphisme.
+              Un site Prestashop. Je ne connaissais pas encore Flex. Un site un
+              peu "improvisé". tout a été implémenté au fur et à mesure. Un
+              refactoring est bientot prévu pour le graphisme.
             </li>
             <li>
               <i>

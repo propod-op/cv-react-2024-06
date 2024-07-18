@@ -242,27 +242,6 @@ section.parcours h2 {
   margin-left: 22rem;
 }
 
-div.bubble-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex;
-  width: calc(100vw - 4rem);
-  height: 20rem;
-}
-
-div.bubble {
-  flex: 1;
-  width: 7rem;
-  height: 7rem;
-}
-
-div.bubble:hover {
-  flex: 1;
-  width: 8rem;
-  height: 8rem;
-  cursor: pointer;
-}
-
 section.parcours div.philosophie {
   width: calc(100vw - 20rem);
   padding: 2rem;
@@ -284,6 +263,27 @@ section.parcours p {
   line-height: 1.2;
 }
 
+div.bubble-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: calc(100vw - 4rem);
+  height: 10rem;
+}
+
+div.bubble {
+  flex: 1;
+  width: 7rem;
+  height: 7rem;
+}
+
+div.bubble:hover {
+  flex: 1;
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+}
+
 .bubble-container::before {
   content: '';
   position: absolute;
@@ -302,16 +302,20 @@ div.bubble-container div.content {
 }
 
 div.bubble-container div.content * {
-  text-align: justify;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 1.35rem;
 }
 
 div.bubble-container div.content .view {
   width: 20rem;
+  margin: auto;
 }
 
 .bubble .panel-text {
-  width: 50vw;
-  left: calc(50% - 25vw);
+  width: 80vw;
+  left: calc(50% - 40vw);
 }
 /* ---------- SECTION PORTEFOLIO -------------- */
 section.portefolio {
@@ -332,11 +336,17 @@ section.portefolio h2 {
 }
 
 section.portefolio > div.introduction {
-  text-align: center;
+  text-align: left;
+  line-height: 1.45;
   font-size: 1.5rem;
   font-family: 'Overpass', sans-serif;
   font-weight: 400;
-  margin: auto;
+  margin: -1.5rem 10% 0rem 10%;
+  height: 15rem;
+}
+
+section.portefolio > div.introduction > ul > li {
+  margin-bottom: 0.75rem;
 }
 
 section.portefolio > section {
@@ -575,8 +585,8 @@ section.contactez-moi div.send-mail {
   justify-content: space-around;
   align-items: center;
 
-  width: 30rem;
-  height: 5rem;
+  width: 25rem;
+  height: 3.5rem;
   background-color: var(--color-pm-3);
   color: #f4f4e3;
 
@@ -591,8 +601,8 @@ section.contactez-moi div.send-mail {
 }
 
 .menubar a {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;

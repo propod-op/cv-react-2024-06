@@ -37,6 +37,7 @@ export const SectionParcours = () => {
           />
         ))}
       </div>
+      <p>(De gauche à droite = des 1ers pas à aujourd'hui)</p>
     </section>
   );
 };
