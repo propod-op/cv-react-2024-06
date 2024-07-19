@@ -18,20 +18,12 @@ export const SectionPortefolio = () => {
       <h2>PORTEFOLIO</h2>
       <section className="separator"></section>
       <div className="introduction">
-        <ul>
-          <li>
-            Dans cette partie je vais vous montrer mon cycle d'évolution en
-            terme de projets des plus récents, au premiers pas avec le code.
-          </li>
-          <li>
-            Tout les projets précédent la période chez RCA sont des projets à
-            l'état de prototypes, des idées et des exercices.
-          </li>
-          <li>
-            Onceagain.fr a été ma 1ère expérience professionnelle en tant que
-            développeur. J'y ai été très bien encadré et accueilli.
-          </li>
-        </ul>
+        Dans cette partie je vais vous montrer mon cycle d'évolution en terme de
+        projets des plus récents, au premiers pas avec le code. Tout les projets
+        précédent la période chez RCA sont des projets à l'état de prototypes,
+        des idées et des exercices. Onceagain.fr a été ma 1ère expérience
+        professionnelle en tant que développeur. J'y ai été très bien encadré et
+        accueilli.
         <br />
       </div>
       <section className="separator"></section>
@@ -237,7 +229,6 @@ export const SectionPortefolio = () => {
               Le serveur LAMP héberge les températures (base MariaDB) et affiche
               le graphique via PHP et ChartJS.
             </li>
-            <li></li>
             <li>Le service JAVA (.jar) est enregistré au redémarrage du Pi</li>
           </ul>
         </div>

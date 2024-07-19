@@ -23,7 +23,10 @@ export const SectionParcours = () => {
         rouages, la syntaxe, puis les procédures. Et la porte s'ouvre aux
         projets..."
       </div>
-      <p>(Cliquez sur les éléments pour plus de détails)</p>
+      <p>
+        (Cliquez sur les éléments pour plus de détails) <br />
+        De gauche à droite = des 1ers pas à aujourd'hui
+      </p>
       <div className="bubble-container">
         {bubblesContent.map((bubble, key) => (
           <Bubble

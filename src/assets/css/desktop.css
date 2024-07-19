@@ -136,7 +136,6 @@ p {
 section.presentation {
   position: relative;
   display: flex;
-  /* justify-content: flex; */
   height: auto;
 }
 
@@ -186,34 +185,37 @@ section.presentation div:nth-child(2) p:nth-child(2) {
 section.presentation div:nth-child(2) p:nth-child(3) {
   margin: 0;
   line-height: 1.5;
-  font-size: 2.5rem;
-  font-family: var(--font-1);
+  font-size: 3rem;
+  font-family: var(--font-overpass);
   font-weight: 800;
   color: var(--color-pm-1);
 }
 
+/* Issu de .... */
 section.presentation div:nth-child(2) p:nth-child(4) {
-  line-height: 1.5;
-  font-family: 'EB Garamond', serif;
-  font-size: 1.6rem;
+  line-height: 1.1;
+  font-family: var(--font-reenie);
+  font-size: 2rem;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
 }
 
+/* J'ai commencé... */
 section.presentation div:nth-child(2) p:nth-child(5) {
-  line-height: 1.35;
-  /* font-family: 'EB Garamond', serif; */
-  font-size: 1.35rem;
+  color: var(--color-pm-1);
+  line-height: 1.5;
+  font-family: var(--font---sofia);
+  font-size: 1.3rem;
   font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 500;
+  font-style: normal;
 }
 section.presentation div:nth-child(2) p:nth-child(6) {
   padding: 0;
   margin: 0;
   line-height: 1.35;
-  font-family: 'Reenie Beanie', cursive;
+  font-family: var(--font-reenie);
   font-weight: 400;
   font-size: 2.5rem;
   font-optical-sizing: auto;
@@ -232,6 +234,13 @@ section.parcours {
   background-size: 600px 100%;
   background-color: #2a546c;
   min-height: 90vh;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  z-index: 20;
 }
 
 section.parcours h2 {
@@ -248,12 +257,13 @@ section.parcours div.philosophie {
   margin-left: 3rem;
   color: white;
 
-  font-family: 'EB Garamond', serif;
+  font-family: var(--font-kalam);
   font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: italic;
-  font-size: 1.5rem;
+  font-weight: 10;
+  font-style: normal;
+  font-size: 2.25rem;
   text-align: justify;
+  line-height: 1.3;
 }
 
 section.parcours p {
@@ -339,14 +349,10 @@ section.portefolio > div.introduction {
   text-align: left;
   line-height: 1.45;
   font-size: 1.5rem;
-  font-family: 'Overpass', sans-serif;
+  font-family: var(--font-kalam);
   font-weight: 400;
-  margin: -1.5rem 10% 0rem 10%;
-  height: 15rem;
-}
-
-section.portefolio > div.introduction > ul > li {
-  margin-bottom: 0.75rem;
+  margin: 0.5rem 10% 0rem 10%;
+  height: auto;
 }
 
 section.portefolio > section {
@@ -363,16 +369,15 @@ section.portefolio > section > div.column.content {
 }
 
 section.portefolio > section > div.column.content > p {
-  /* font-family: 'Reenie Beanie', cursive; */
-  /* font-family: 'Amatic SC', sans-serif; */
-  /* font-family: 'Sofia Sans Semi Condensed', sans-serif; */
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-optical-sizing: auto;
-  font-style: italic;
+  text-align: left;
+  line-height: 1.45;
   font-size: 1.25rem;
-  line-height: 1.5;
-  color: var(--color-pm-1);
+  font-family: var(--font-kalam);
+  font-weight: 400;
+
+  color: var(--color-pm-5);
+
+  margin-top: 1rem 0;
 }
 
 section.portefolio > section > div.column.content > div.title {
@@ -393,6 +398,7 @@ section.portefolio > section > div.column.content > ul > li {
   line-height: 1.5;
   margin-bottom: 1rem;
   padding-left: 2rem;
+  color: var(--color-pm-1);
 }
 section.portefolio > section > div.column.content > ul > li::before {
   content: '✅'; /* Caractère personnalisé */
@@ -497,6 +503,10 @@ section.contactez-moi h2 {
   font-size: 4rem;
   text-align: center;
   margin: 0.5rem 0 0.5rem 0;
+  color: var(--color-pm-5);
+  /* text-shadow: 
+    1px 1px white,
+    -1px -1px #444;*/
 }
 
 section.contactez-moi form {
@@ -554,7 +564,7 @@ section.contactez-moi section.contactez-moi div.input-container > input {
 
 section.contactez-moi input,
 section.contactez-moi textarea {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-josephine);
   font-size: 1.2rem;
   color: black;
   padding: 0.75rem 1rem 0.75rem 1rem;

@@ -10,8 +10,9 @@ body {
   --font-julius: 'Julius Sans One', sans-serif; /* Police type sans serif medievale */
   --font-amatic: 'Amatic SC', sans-serif; /* Police sans serif Manuscrite */
   --font-sofia: 'Sofia Sans Semi Condensed', sans-serif;
-  --font-beanie: 'Reenie Beanie', cursive; /* Police manuscrite tableau craie */
+  --font-reenie: 'Reenie Beanie', cursive; /* Police manuscrite tableau craie */
   --font-roboto: 'Roboto', sans-serif; /* Police Sans serif */
+  --font-kalam: 'Kalam', cursive;
 }
 
 .pm-1 {

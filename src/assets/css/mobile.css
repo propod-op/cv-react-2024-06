@@ -176,23 +176,30 @@ section.presentation p.je-suis {
   color: var(--color-pm-1);
 }
 
+/* Issu de .... */
 section.presentation p.paragraphe {
-  line-height: 1.5;
-  font-family: 'EB Garamond', serif;
-  font-size: 1.3rem;
+  line-height: 1;
+  font-family: var(--font-reenie);
+  font-size: 2rem;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: italic;
+  margin: 0 auto;
 }
 
+/* J'ai commencé... */
 section.presentation p.le-site {
   color: var(--color-pm-1);
   line-height: 1.5;
-  font-family: 'Sofia Sans Semi Condensed', sans-serif;
-  font-size: 1.3rem;
+  font-family: var(--font---sofia);
+  font-size: 1.1rem;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+section.presentation button {
+  margin: 0;
 }
 
 /* ----------- PARCOURS -------------- */
@@ -213,30 +220,27 @@ section.parcours {
 section.parcours h2 {
   color: var(--color-pm-3);
   text-align: center;
-  margin-bottom: 0;
+  margin: 1rem 0 0.5rem 0;
   font-size: 4rem;
 }
 
 section.parcours div.philosophie {
-  width: calc(100% - 6rem);
-  padding: 2rem;
+  padding: 0 2rem;
   color: white;
 
-  font-family: 'EB Garamond', serif;
+  font-family: var(--font-kalam);
   font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: italic;
-  font-size: 1.5rem;
+  font-weight: 10;
+  font-style: normal;
+  font-size: 1.25rem;
   text-align: justify;
+  line-height: 1.3;
 }
 
 section.parcours > p {
   margin: 0;
   padding: 0;
-}
-
-section.parcours img.parcours {
-  width: calc(100% - 3rem);
+  text-align: center;
 }
 
 section.parcours p {
@@ -287,16 +291,11 @@ section.separator::before {
 section.portefolio > div.introduction {
   text-align: left;
   line-height: 1.45;
-  font-size: 1rem;
-  font-family: 'Overpass', sans-serif;
+  font-size: 1.25rem;
+  font-family: var(--font-kalam);
   font-weight: 400;
-  margin: 0rem 2rem 0rem 1rem;
+  margin: 1rem 2rem 1rem 1rem;
   height: auto;
-  padding-top: 1rem;
-}
-
-section.portefolio > div.introduction > ul > li {
-  margin-bottom: 0.75rem;
 }
 
 section.portefolio > section div.scotch {
@@ -325,13 +324,13 @@ section.portefolio > section > div.column.image {
 }
 
 section.portefolio > section > div.content p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-optical-sizing: auto;
-  font-style: italic;
+  text-align: left;
+  line-height: 1.45;
   font-size: 1.25rem;
-  line-height: 1.35;
-  color: var(--color-pm-1);
+  font-family: var(--font-kalam);
+  font-weight: 400;
+
+  color: var(--color-pm-5);
   padding: 0.5rem 2rem;
   margin-top: 0;
 }
@@ -410,6 +409,7 @@ section.contactez-moi h2 {
   padding-left: unset;
   text-align: center;
   font-size: 2.5rem;
+  color: var(--color-pm-5);
 }
 
 section.contactez-moi form {
@@ -431,7 +431,7 @@ section.contactez-moi form textarea {
   line-height: 1.5;
   font-size: 0.85rem;
   font-weight: 400;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-josephine);
   color: #121516;
 
   border: 1px solid #bbb9b9;
