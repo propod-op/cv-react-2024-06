@@ -4,8 +4,15 @@ import { useEmailForm } from '../../hooks/useEmailForm';
 import { useEmailJS } from '../../hooks/useSendEmail';
 import { Scotch } from '../commons/Scotch';
 import SvgIcon from './SvgIcon.jsx';
+import { Toast } from '../commons/Toast.jsx';
 
 export const SectionContactezMoi = () => {
+  const [showToast, setShowToast] = useState(false);
+  const [boxMessage, setBoxMessage] = useState('');
+  const [boxStyle, setBoxStyle] = useState('');
+  const [boxTitle, setBoxTitle] = useState('');
+  const onClose = () => setShowToast(false);
+
   let canSendMail = false;
 
   function onChange(value) {
@@ -17,30 +24,40 @@ export const SectionContactezMoi = () => {
 
   const { send, status } = useEmailJS();
 
-  // useEffect(() => {
-  // 	if (status === "success") {
-  // 		alert("Votre email à bien été envoyé !");
-  // 		reset();
-  // 	} else if (status === "failure") {
-  // 		alert("Failed to send email.");
-  // 	}
-  // }, [status]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (canSendMail === false) {
-      console.log('Veuillez valider votre Captcha');
+      // console.log('Veuillez valider votre Captcha');
+      setBoxMessage(
+        'Pensez à cocher le Captcha et bien remplir tout les champs',
+      );
+      setBoxStyle('alert');
+      setBoxTitle("Erreur d'envoi de l'email");
+      setShowToast(true);
       return false;
     }
 
     send(formData);
+    setBoxTitle('Votre email envoyé !');
+    setBoxMessage('Je vous repondrais sous peu.');
+    setBoxStyle('success');
+    setShowToast(true);
   };
 
   return (
     <section id="CON" className="contactez-moi bg-dotted">
+      <Toast
+        visible={showToast}
+        style={boxStyle}
+        autoClose={false}
+        title={boxTitle}
+        message={boxMessage}
+        buttonText="OK"
+        duration={1000}
+        onClose={onClose}
+        // ou onClose = {() => setShowToast(false)}
+      />
       <form onSubmit={handleSubmit}>
-        {status === 'success' && <p>Envoi OK x</p>}
-        {status === 'failure' && <p>Envoi KO x</p>}
         <h2>CONTACTEZ-MOI</h2>
         <Scotch
           on="mobile"

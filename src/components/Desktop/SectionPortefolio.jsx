@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Scotch } from '../commons/Scotch';
 
 export const SectionPortefolio = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
 
   return (
     <section id="POR" className="portefolio bg-dotted">
@@ -238,7 +238,7 @@ export const SectionPortefolio = () => {
         </div>
       </section>
       <section className="separator"></section>
-      <section className="rca perso-1">
+      <section className="perso-1">
         <div className="column content">
           {' '}
           <Scotch
@@ -354,7 +354,6 @@ export const SectionPortefolio = () => {
           </ul>
         </div>
       </section>
-      <section className="separator"></section>
     </section>
   );
 };

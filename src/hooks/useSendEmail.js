@@ -14,6 +14,7 @@ export const useEmailJS = () => {
       (response) => {
         setStatus('success');
         console.log('SUCCESS!', response.status, response.text);
+
         // alert("Votre email à bien été envoyé !");
         // reset();
       },

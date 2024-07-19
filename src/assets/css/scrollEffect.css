@@ -1,6 +1,5 @@
 section.exposed {
   opacity: 1;
-  background-color: red;
   transition: opacity 0.5s ease-in-out;
 }
 

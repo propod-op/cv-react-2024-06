@@ -19,7 +19,6 @@ section {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  border-top: 2px solid #777;
 }
 
 a button,
@@ -262,43 +261,155 @@ section.portefolio {
 }
 section.portefolio h2 {
   margin: 0.5rem 0;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 
-section.portefolio > div {
+section.portefolio > section {
+  border: unset;
+  height: auto;
+}
+
+section.separator {
+  height: 1rem;
+  border: none;
+}
+section.separator::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 2rem;
+  top: 50%;
+  border-top: 4px dashed rgb(0, 0, 0);
+  transform: translateY(-50%);
+}
+
+section.portefolio > div.introduction {
+  text-align: left;
+  line-height: 1.45;
+  font-size: 1rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  margin: 0rem 2rem 0rem 1rem;
+  height: auto;
+  padding-top: 1rem;
+}
+
+section.portefolio > div.introduction > ul > li {
+  margin-bottom: 0.75rem;
+}
+
+section.portefolio > section div.scotch {
+  font-stretch: ultra-condensed;
+  width: 80%;
+  margin-bottom: 1.5rem;
   margin-top: 2rem;
 }
-section.portefolio > div > div:not(.scotch) {
-  padding: 1rem;
+
+section.portefolio > section div.title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--color-pm-1);
+  padding: 0.5rem 2rem;
 }
 
-section.portefolio ul li {
-  margin: 0.5rem 1rem 0.5rem 0.5rem;
-  width: calc(100% - 2rem);
-  line-height: 1.35;
-  font-size: 1rem;
+section.portefolio > section > div.column.image {
+  z-index: 20;
+  height: 22rem;
+  width: 100%;
+  background-size: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+section.portefolio > section > div.content p {
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  font-family: var(--font-roboto);
-  color: var(--color-pm-5);
-  /*list-style-type: "✅";*/
-  list-style-type: '➜  ';
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  color: var(--color-pm-1);
+  padding: 0.5rem 2rem;
+  margin-top: 0;
 }
 
-section.portefolio img {
-  width: calc(100% - 2rem);
-  margin-left: 1rem;
+section.portefolio > section > div.column.content > ul {
+  list-style-type: none;
+  width: calc(100% - 4rem);
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+section.portefolio > section > div.column.content > ul > li {
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+section.portefolio > section > div.column.content > ul > li::before {
+  content: '✅'; /* Caractère personnalisé */
+  color: rgb(6, 146, 6);
+  font-size: 1rem;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+
+section.portefolio > section.onceagain {
+  border: unset;
+  height: auto;
+}
+
+section.portefolio > section.onceagain > div.column.image {
+  background-image: url('../images/portefolio/onceagain.jpg');
+}
+
+section.portefolio > section.rca-1 > div.column.image {
+  height: 12em;
+  background-image: url('../images/portefolio/projet-xpsuite.png');
+  width: 90%;
+}
+
+section.portefolio > section.rca-1 div.scotch {
+  width: 90%;
+}
+
+section.portefolio > section.rca-2 > div.column.image {
+  height: 12em;
+  background-image: url('../images/portefolio/kit-estamp.jpg');
+  width: 90%;
+}
+
+section.portefolio > section.rca-2 div.scotch {
+  width: 90%;
+}
+
+section.portefolio > section.java-1 > div.column.image {
+  height: 18em;
+  background-image: url('../images/portefolio/schema-raspberry-sondes.jpg');
+  width: 90%;
+}
+
+section.portefolio > section.rca-2 div.scotch {
+  width: 90%;
 }
 
 /* ----------- CONTACTEZ-MOI -------------- */
 section.contactez-moi {
-  height: 100vh;
+  height: auto;
+  padding-bottom: 5rem;
 }
 section.contactez-moi h2 {
-  color: var(--color-pm-3);
+  color: var(--color-pm-1);
   padding-left: unset;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 section.contactez-moi form {
@@ -307,13 +418,12 @@ section.contactez-moi form {
   justify-content: flex-start;
   align-items: center;
 
-  /* border: 1px solid #656565; */
-  /* border-radius: 0.25rem; */
-  /* background-color: rgb(255, 255, 255, 0.85); */
-  height: calc(100vh - 15rem);
+  background-color: var(--color-pm-3);
+  height: auto;
   width: calc(100% - 4rem);
   padding: 1rem;
   margin-top: 1rem;
+  border-radius: 0.5rem;
 }
 
 section.contactez-moi form input,
@@ -332,7 +442,7 @@ section.contactez-moi form textarea {
   padding: 0.25rem 0.5rem;
 }
 section.contactez-moi form textarea {
-  height: 10rem;
+  height: 15rem;
   margin-bottom: 1rem;
 }
 
@@ -340,4 +450,9 @@ section.contactez-moi form > div,
 section.contactez-moi form > input,
 section.contactez-moi form > button[type='submit'] {
   margin-bottom: 0.5rem;
+}
+
+section.contactez-moi form > button[type='submit'] {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 3rem;
 }
