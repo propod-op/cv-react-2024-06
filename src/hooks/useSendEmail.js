@@ -10,18 +10,15 @@ export const useEmailJS = () => {
 
   const send = (formData) => {
     setStatus('sending');
+
     emailjs.send(serviceId, templateId, formData, userId).then(
       (response) => {
         setStatus('success');
         console.log('SUCCESS!', response.status, response.text);
-
-        // alert("Votre email à bien été envoyé !");
-        // reset();
       },
       (error) => {
         setStatus('failure');
         console.log('FAILED...', error);
-        // alert("Failed to send email.");
       },
     );
   };

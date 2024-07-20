@@ -577,7 +577,7 @@ section.contactez-moi textarea::placeholder {
 }
 
 section.contactez-moi textarea {
-  width: calc(100% - 2rem);
+  width: 80%;
   height: 10rem;
   padding: 1rem;
 }

@@ -436,7 +436,7 @@ section.contactez-moi form textarea {
 
   border: 1px solid #bbb9b9;
   border-radius: 0.2rem;
-  background-color: rgb(255, 255, 255, 0.85);
+  /* background-color: rgb(255, 255, 255, 0.85); */
   height: auto;
   width: calc(100% - 1rem);
   padding: 0.25rem 0.5rem;

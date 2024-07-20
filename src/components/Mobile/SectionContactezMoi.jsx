@@ -25,9 +25,9 @@ export const SectionContactezMoi = () => {
   const { send, status } = useEmailJS();
 
   const handleSubmit = (e) => {
+    console.log('formData', formData);
     e.preventDefault();
     if (canSendMail === false) {
-      // console.log('Veuillez valider votre Captcha');
       setBoxMessage(
         'Pensez à cocher le Captcha et bien remplir tout les champs',
       );
