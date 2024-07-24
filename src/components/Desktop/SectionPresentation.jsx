@@ -32,7 +32,7 @@ export const SectionPresentation = () => {
         <p>JE SUIS OLIVIER</p>
         <p>
           "Issu de 15 ans d’expérience dans l’imprimerie, j’ai décidé de
-          poursuivre mon parcours dans le domaine du numérique et en me
+          poursuivre mon parcours dans le domaine du numérique en me
           spécialisant sur le développement FRONT REACT..."
         </p>
         <p>
