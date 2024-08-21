@@ -41,13 +41,15 @@ export const SectionPresentation = () => {
           avec VB.Net jusqu'à aujourd'hui avec Javascript.
         </p>
       </div>
-      <a href="#PAR" className="">
-        <button
-          className="pm-1"
-          style={{ marginBottom: '5rem', width: '6rem' }}
-        >
-          Suite ➜
-        </button>
+      <a href="#PAR" className="suite-link">
+        <button className="pm-1">Suite ➜</button>
+      </a>
+      <a
+        href="https://documents.propod.fr/CV-2024.pdf"
+        target="_blank"
+        className="pdf"
+      >
+        Version PDF de mon CV
       </a>
     </section>
   );

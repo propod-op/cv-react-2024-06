@@ -124,6 +124,8 @@ p {
 /* ----------- PRESENTATION -------------- */
 section.presentation {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
 }
@@ -198,8 +200,12 @@ section.presentation p.le-site {
   font-style: normal;
 }
 
-section.presentation button {
+section.presentation a.suite-link button {
   margin: 0;
+}
+
+section.presentation a.pdf {
+  margin: 0.75rem 0 0.75rem 0;
 }
 
 /* ----------- PARCOURS -------------- */
