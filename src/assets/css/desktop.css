@@ -139,7 +139,12 @@ section.presentation {
   height: auto;
 }
 
-section.presentation > div {
+section.presentation h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.presentation > div.block-1 {
   flex: 1;
   max-width: 50%;
 }
@@ -159,7 +164,9 @@ section.presentation div:nth-child(2) {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 3rem;
+  padding: 2rem 2rem 0rem 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* HI */
@@ -211,7 +218,16 @@ section.presentation div:nth-child(2) p:nth-child(5) {
   font-weight: 500;
   font-style: normal;
 }
-section.presentation div:nth-child(2) p:nth-child(6) {
+
+section.presentation div.block-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+section.presentation span.signature {
   padding: 0;
   margin: 0;
   line-height: 1.35;
@@ -221,6 +237,20 @@ section.presentation div:nth-child(2) p:nth-child(6) {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: italic;
+}
+
+section.presentation a.pdf {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  line-height: 1.35;
+  font-family: var(--font-josephine);
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* ---------- SECTION PARCOURS -------------- */

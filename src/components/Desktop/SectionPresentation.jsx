@@ -26,7 +26,7 @@ export const SectionPresentation = () => {
     >
       <div className="photo"></div>
 
-      <div>
+      <div className="block-1">
         <h2>PRESENTATION</h2>
         <p>Hi everybody !</p>
         <p>JE SUIS OLIVIER</p>
@@ -42,7 +42,16 @@ export const SectionPresentation = () => {
           main. Vous trouverez sur le site, mon parcours de développeur, des
           débuts avec VB.Net jusqu'à aujourd'hui avec Javascript.
         </p>
-        <p>Olivier.</p>
+        <div className="block-2">
+          <span className="signature">Olivier.</span>
+          <a
+            href="https://documents.propod.fr/CV-2024.pdf"
+            target="_blank"
+            className="pdf"
+          >
+            Version PDF de mon CV
+          </a>
+        </div>
       </div>
     </section>
   );

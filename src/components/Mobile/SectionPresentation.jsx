@@ -44,7 +44,7 @@ export const SectionPresentation = () => {
       <a href="#PAR" className="">
         <button
           className="pm-1"
-          style={{ marginBottom: '5rem', width: '4rem' }}
+          style={{ marginBottom: '5rem', width: '6rem' }}
         >
           Suite ➜
         </button>
