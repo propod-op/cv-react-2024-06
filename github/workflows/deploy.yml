@@ -1,4 +1,4 @@
-#Lors q'un commit contenant la clé [deploy] envoi vers le FTP du build
+#Lors d'un commit contenant la clé [deploy] on envoi vers le FTP du build
 name: Deploy to FTP
 
 on:
@@ -18,8 +18,8 @@ jobs:
       - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.4.0
         with:
-          server: ftp://ftp.yourserver.com
+          server: ftp://ftp.swco2529.odns.fr
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build
-          server-dir: /path/to/deployment/directory
+          server-dir: /
