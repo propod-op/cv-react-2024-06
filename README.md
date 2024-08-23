@@ -63,7 +63,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+J'ai ajouté un workflow : lors d'un commit avec le mot-clé [deploy] le build est envoyé sur FTP
 
 ### `npm run build` fails to minify
 
